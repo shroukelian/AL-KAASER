@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكاسر القابضة | Al Kaaser Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- الشريط العلوي (Utility Bar) -->
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="utility-links">
+                <a href="#">المستثمرون</a>
+                <a href="#">الموردون</a>
+                <a href="#">الوظائف</a>
+                <a href="#">المركز الإعلامي</a>
+                <a href="#">تواصل معنا</a>
+            </div>
+            <div class="lang-switch">
+                <a href="#">English</a> | <strong>العربية</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- الهيدر الرئيسي -->
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <div class="brand" onclick="location.reload()">
+                <img src="images/logo.png" alt="Al Kaaser Holding" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">الكاسر القابضة</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#hero">قصتنا</a></li>
+                    <li class="has-mega">
+                        <a href="#">أنشطتنا وشركاتنا <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+                                <div class="mega-col">
+                                    <h4>المال والاستثمار</h4>
+                                    <ul>
+                                        <li>إمارات الخير لصناديق الاستثمار</li>
+                                        <li>أفرو أكسبرس للوساطة</li>
+                                        <li>إس إس لتجارة الذهب</li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>التقنية والابتكار</h4>
+                                    <ul>
+                                        <li>ديجيتال هاب</li>
+                                        <li>الحلول الذهبية لتقنية المعلومات</li>
+                                        <li>مصنع بلو داكس</li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>التعليم والصحة</h4>
+                                    <ul>
+                                        <li>الكاسر لإدارة المدارس</li>
+                                        <li>الكاسر للإدارة وتطوير المستشفيات</li>
+                                        <li>مركز ريل تايم للتدريب</li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>العقارات والخدمات</h4>
+                                    <ul>
+                                        <li>بوابة السواعد الخضراء للعقارات</li>
+                                        <li>بوابة السواعد الخضراء للتجارة</li>
+                                        <li>باسيفيك لتجارة الديزل</li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>الضيافة والأسلوب</h4>
+                                    <ul>
+                                        <li>فود أو كلوك (مطاعم)</li>
+                                        <li>الملكي للفروسية</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#sustainability">الاستدامة</a></li>
+                    <li><a href="#innovation">الابتكار</a></li>
+                    <li><i class="fas fa-search search-icon"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم الهيرو سلايدر (3 سلايدات) -->
+    <section class="hero-slider ">
+
+        <div class="slide active"
+            style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">شريكك الموثوق</span>
+                        <h1>طاقة الاستثمار <br> تفتح آفاق المستقبل</h1>
+                        <p>نستثمر في القوى البشرية ونبتكر الحلول لمد جسور التواصل بين القطاعين العام والخاص في دولة
+                            الإمارات.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='#business'">اكتشف شركاتنا</button>
+                            <button class="btn-outline-pro" onclick="location.href='#contact'">تواصل معنا</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- السلايد الثاني: الاستدامة -->
+        <div class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">الاستدامة والبيئة</span>
+                        <h1>نحو مستقبل <br> أخضر ومستدام</h1>
+                        <p>نلتزم في الكاسر القابضة بتطبيق أعلى معايير الاستدامة البيئية والنمو الأخضر منخفض الكربون.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='#sustainability'">تقرير
+                                الاستدامة</button>
+                            <button class="btn-outline-pro" onclick="location.href='#about'">رؤيتنا</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- السلايد الثالث: التكنولوجيا (الجديد) -->
+        <div class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">الابتكار الرقمي</span>
+                        <h1>الذكاء الاصطناعي <br> يقود استثماراتنا</h1>
+                        <p>عبر "ديجيتال هاب"، نقدم حلولاً تقنية متطورة لتعزيز كفاءة الأعمال والتحول الرقمي الشامل.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='#innovation'">حلولنا التقنية</button>
+                            <button class="btn-outline-pro" onclick="location.href='#business'">قطاعاتنا</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- البطاقة العائمة الجانبية -->
+        <div class="hero-context-card">
+            <div class="context-img">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=200&q=80"
+                    alt="Innovation">
+            </div>
+            <div class="context-text">
+                <h4>إطلاق إمكانات الذكاء الاصطناعي</h4>
+                <p>حلولنا التقنية في ديجيتال هاب</p>
+            </div>
+        </div>
+
+        <!-- نقاط التنقل -->
+        <div class="slider-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- سكشن من نحن / رؤيتنا -->
+    <section class="section-padding container reveal ">
+        <div class="vision-grid">
+            <div class="vision-text reveal-right delay-1">
+                <span class="sub-badge">من نحن</span>
+                <h2>رؤية طموحة لمستقبل واعد</h2>
+                <p>الاستثمار في الإنسان ودعم الإبداع والابتكار، وبناء المستقبل، ومد جسور التواصل بين القطاعين العام
+                    والخاص استناداً على العلاقات المحلية والدولية للاستثمار الأمثل لغد أفضل ومستقبل واعد.</p>
+                <button class="btn-text">اقرأ المزيد <i class="fas fa-arrow-left"></i></button>
+            </div>
+            <div class="vision-image reveal-left delay-2">
+                <!-- استبدلي الرابط بصورة حقيقية لأبوظبي -->
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
+                    alt="رؤية الكاسر">
+            </div>
+        </div>
+    </section>
+
+    <!-- سكشن الاستدامة (Eco Sustainability) -->
+    <section class="sustainability-section" id="sustainability">
+        <div class="container">
+            <div class="section-header-right">
+                <h2>الاستدامة | Eco Sustainability</h2>
+            </div>
+
+            <div class="eco-card-container">
+                <div class="eco-card-content">
+                    <div class="eco-icon-box">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="eco-text-box">
+                        <h3>النمو الأخضر منخفض الكربون</h3>
+                        <p>نحن نقود عصر النمو الأخضر من خلال الأبحاث وتطوير التكنولوجيا. التزامنا يتجاوز الاستثمار
+                            المالي ليصل إلى الاستثمار البيئي المستدام لتحقيق التوازن بين التطور والطبيعة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سكشن إحصائيات القوة - طراز أدنوك -->
+    <section class="adnoc-stats-section">
+        <div class="fixed-gradient-overlay">
+            <div class="container adnoc-grid">
+
+                <!-- الجانب الأيمن: المحتوى النصي -->
+                <div class="adnoc-stats-info">
+                    <span class="hero-badge">أرقام وإنجازات</span>
+                    <h2>نصنع الفرق <br> في كل قطاع</h2>
+                    <p>تلتزم الكاسر القابضة بدفع عجلة الابتكار والنمو الاقتصادي في دولة الإمارات، عبر محفظة استثمارية
+                        متنوعة تخدم رؤية المستقبل.</p>
+                </div>
+
+                <!-- الجانب الأيسر: الأرقام الضخمة والأيقونات -->
+                <div class="adnoc-numbers-list">
+
+                    <!-- الرقم 1 (عدد الشركات) -->
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-layer-group"></i> <!-- أيقونة مخصصة للشركات -->
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">15</span>
+                            <div class="stat-title">شركة تابعة</div>
+                            <p class="stat-desc">تعمل في 5 قطاعات اقتصادية حيوية</p>
+                        </div>
+
+                    </div>
+
+                    <!-- الرقم 2 (رؤية 2030) -->
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">2030</span>
+                            <div class="stat-title">رؤية مستدامة</div>
+                            <p class="stat-desc">نساهم في تحقيق أهداف رؤية الإمارات</p>
+                        </div>
+
+                    </div>
+
+                    <!-- الرقم 3 (الطاقة المتجددة/الاستدامة) -->
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">100%</span>
+                            <div class="stat-title">حلول مبتكرة</div>
+                            <p class="stat-desc">التزام تام بمعايير الجودة والتميز المؤسسي</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- سكشن قطاعات الأعمال والشركات التابعة -->
+    <section id="business" class="section-padding container">
+        <div class="section-title">
+            <span class="sub-badge" style="text-align: center;">محفظتنا الاستثمارية</span>
+            <h2 style="text-align: center;">قطاعاتنا وشركاتنا</h2>
+            <div class="line-center"></div>
+        </div>
+
+        <div class="sectors-grid">
+            <!-- قطاع المال والاستثمار -->
+            <div class="sector-card reveal delay-1">
+                <div class="sector-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>المال والاستثمار</h3>
+                <ul>
+                    <li>شركة إمارات الخير لصناديق الاستثمار</li>
+                    <li>شركة أفرو أكسبرس للوساطة التجارية</li>
+                    <li>شركة إس إس لتجارة الذهب</li>
+                </ul>
+            </div>
+
+            <!-- قطاع التكنولوجيا والابتكار -->
+            <div class="sector-card reveal delay-2">
+                <div class="sector-icon"><i class="fas fa-microchip"></i></div>
+                <h3>التكنولوجيا والرقمنة</h3>
+                <ul>
+                    <li>ديجيتال هاب (Digital Hub)</li>
+                    <li>شركة الحلول الذهبية لتقنية المعلومات</li>
+                    <li>مصنع بلو داكس</li>
+                </ul>
+            </div>
+
+            <!-- قطاع التعليم والصحة -->
+            <div class="sector-card reveal delay-3">
+                <div class="sector-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>التعليم والرعاية الصحية</h3>
+                <ul>
+                    <li>شركة الكاسر لإدارة المدارس</li>
+                    <li>شركة الكاسر لتطوير المستشفيات</li>
+                    <li>مركز ريل تايم للخدمات الأمنية والتدريب</li>
+                </ul>
+            </div>
+
+            <!-- قطاع العقارات والخدمات -->
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-city"></i></div>
+                <h3>العقارات والخدمات اللوجستية</h3>
+                <ul>
+                    <li>بوابة السواعد الخضراء للعقارات</li>
+                    <li>بوابة السواعد الخضراء للتجارة العامة</li>
+                    <li>شركة باسيفيك لتجارة الديزل</li>
+                    <li>بوابة التواصل لخدمات رجال الأعمال</li>
+                </ul>
+            </div>
+
+            <!-- قطاع أسلوب الحياة -->
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-horse-head"></i></div>
+                <h3>الضيافة والفعاليات</h3>
+                <ul>
+                    <li>شركة الملكي للفروسية وتنظيم الفعاليات</li>
+                    <li>شركة فود أو كلوك (مطاعم ومقاهي)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- سكشن الابتكار والذكاء الاصطناعي -->
+    <section id="innovation" class="tech-section">
+        <div class="container tech-wrapper">
+            <div class="tech-visual">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                    alt="التكنولوجيا">
+            </div>
+            <div class="tech-content">
+                <span class="hero-badge">المستقبل الآن</span>
+                <h2>مد جسور التواصل <br>عبر الذكاء الاصطناعي</h2>
+                <p>نعمل في "الكاسر القابضة" على توظيف أحدث تقنيات الذكاء الاصطناعي لربط القطاعين العام والخاص، وتحسين
+                    كفاءة العمليات الاستثمارية بما يخدم رؤية الإمارات الرقمية 2030.</p>
+                <button class="btn-gold">اكتشف ديجيتال هاب</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- سكشن تواصل معنا المطور -->
+    <section id="contact" class="section-padding container">
+        <div class="contact-main-card">
+            <!-- جهة المعلومات (الزرقاء) -->
+            <div class="contact-blue-side">
+                <h2>تواصل معنا</h2>
+                <p>نحن هنا للرد على استفساراتكم وبناء شراكات استثمارية جديدة.</p>
+
+                <div class="contact-info-list">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@alkaaser.ae</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>أبوظبي، الإمارات العربية المتحدة 🇦🇪</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- جهة الفورم (البيضاء) -->
+            <div class="contact-white-side">
+                <form class="kaaser-form">
+                    <div class="input-group">
+                        <label>الاسم الكامل</label>
+                        <input type="text" placeholder="ادخل اسمك هنا">
+                    </div>
+                    <div class="input-group">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" placeholder="email@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label>رسالتك</label>
+                        <textarea placeholder="كيف يمكننا مساعدتك؟"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-gold">إرسال الطلب الآن</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <!-- العمود الأول: المركز الإعلامي -->
+            <div class="footer-column">
+                <h4>المركز الإعلامي</h4>
+                <ul>
+                    <li><a href="#">البيانات الصحفية</a></li>
+                    <li><a href="#">مكتبة الصور والفيديو</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثاني: روابط سريعة -->
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">شركاؤنا</a></li>
+                    <li><a href="#">الموردون</a></li>
+                    <li><a href="#">تنبيه من الاحتيال</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثالث: استكشف الكاسر -->
+            <div class="footer-column">
+                <h4>استكشف الكاسر</h4>
+                <ul>
+                    <li><a href="#">الاستدامة والتحول</a></li>
+                    <li><a href="#">قيمنا وتاريخنا</a></li>
+                    <li><a href="#">الإدارة والقيادة</a></li>
+                    <li><a href="#">المشاريع الرئيسية</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الرابع: معلومات الشركة واللوجو -->
+            <div class="footer-column brand-info-col">
+                <img src="logo-white.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>شركة الكاسر القابضة</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> أبوظبي، الإمارات العربية المتحدة</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- الشريط السفلي: الحقوق والسوشيال ميديا -->
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 الكاسر القابضة. جميع الحقوق محفوظة.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
