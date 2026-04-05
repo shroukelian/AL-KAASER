@@ -1610,6 +1610,19 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
         margin: 15px 0 !important;
     }
 
+
+    .tech-content .btn-gold:hover {
+        background-color: #fff !important;
+        transform: translateY(-3px);
+    }
+    
+    /* توسيط البادج "المستقبل الآن" */
+    .tech-content .hero-badge {
+        margin: 0 auto 15px !important;
+        display: inline-block;
+    }
+}
+
     /* 3. ضبط الزرار (اكتشف ديجيتال هاب) ليكون فخم */
     .tech-content .btn-gold {
         background-color: var(--accent) !important; /* اللون الذهبي */
@@ -1627,15 +1640,3 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
         margin: 20px auto 0 !important;
         transition: 0.3s;
     }
-
-    .tech-content .btn-gold:hover {
-        background-color: #fff !important;
-        transform: translateY(-3px);
-    }
-    
-    /* توسيط البادج "المستقبل الآن" */
-    .tech-content .hero-badge {
-        margin: 0 auto 15px !important;
-        display: inline-block;
-    }
-}
