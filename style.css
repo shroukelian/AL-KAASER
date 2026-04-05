@@ -1424,3 +1424,218 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     50% { transform: scale(1.1); opacity: 1; }
     100% { transform: scale(1); opacity: 0.8; }
 }
+
+/* =========================================
+   تنسيق الموبايل الاحترافي (Responsive Design)
+   ========================================= */
+
+@media (max-width: 768px) {
+    .container { width: 92%; }
+
+    /* 1. الهيدر: إخفاء المنيو الطويلة وإظهار اللوجو فقط */
+    .top-bar { display: none; } /* توفير مساحة */
+    .main-header { padding: 10px 0; }
+    .nav-menu { display: none; } /* المنيو في الموبايل تحتاج زرار (هيدن حالياً) */
+    .main-logo { height: 50px; }
+    .company-name { font-size: 16px; }
+    .company-sub { font-size: 8px; }
+
+    /* 2. سكشن الهيرو (البداية) */
+    .hero { height: auto; padding: 100px 0 50px; text-align: center; }
+    .hero-overlay { background: rgba(7, 30, 61, 0.7); }
+    .hero-content { padding: 0 10px; }
+    .hero h1 { font-size: 32px !important; line-height: 1.3; }
+    .hero p { font-size: 16px; margin-bottom: 30px; }
+    .hero-actions { flex-direction: column; gap: 15px; width: 100%; }
+    .btn-gold-pro, .btn-outline-pro { width: 100%; padding: 15px; margin: 0 !important; }
+
+    /* البطاقة العائمة (تنزيلها تحت السلايدر) */
+    .hero-context-card {
+        position: relative; bottom: 0; left: 0; width: 100%;
+        margin-top: 30px; background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+    }
+
+    /* 3. سكشن "من نحن" (ترتيب راسي) */
+    .vision-layout { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .vision-text h2 { font-size: 28px; }
+    .vision-image img { height: 250px; }
+
+    /* 4. سكشن الاستدامة */
+    .eco-card { flex-direction: column; text-align: center; padding: 30px 20px; gap: 20px; }
+    .eco-icon { font-size: 60px; }
+    .eco-text-box h3 { font-size: 22px; }
+
+    /* 5. سكشن أرقام القوة (أهم تعديل) */
+    .adnoc-grid { grid-template-columns: 1fr; gap: 40px; }
+    .adnoc-stats-section { background-attachment: scroll; min-height: auto; }
+    .adnoc-stats-info { text-align: center; }
+    .adnoc-stats-info h2 { font-size: 30px; }
+    
+    .adnoc-stat-card { flex-direction: column-reverse; gap: 15px; text-align: center; justify-content: center; }
+    .big-num { font-size: 60px !important; } /* تصغير الرقم الضخم */
+    .stat-title { font-size: 20px; }
+    .adnoc-icon-box { border-right: none; border-bottom: 2px solid var(--accent); padding: 0 0 15px 0; width: 60px; margin: 0 auto; }
+
+    /* 6. سكشن القطاعات (الـ 15 شركة) */
+    .sectors-grid { grid-template-columns: 1fr; }
+    .sector-card { padding: 25px; }
+
+    /* 7. سكشن التكنولوجيا (Innovation) */
+    .tech-wrapper { flex-direction: column-reverse; gap: 30px; text-align: center; }
+    .tech-content h2 { font-size: 28px; }
+
+    /* 8. سكشن التواصل */
+    .contact-main-card { flex-direction: column; }
+    .contact-blue-side, .contact-white-side { padding: 40px 20px; width: 100%; }
+    .contact-blue-side h2 { font-size: 26px; }
+
+    /* 9. الفوتر */
+    .footer-grid-wrap { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .brand-info-col { text-align: center; }
+    .social-icons-wrap { justify-content: center; }
+    .mobile-column { flex-direction: column-reverse; gap: 20px; text-align: center; }
+}
+
+/* --- أيقونة المنيو للموبايل --- */
+.menu-toggle {
+    display: none; /* مخفية في الكمبيوتر */
+    font-size: 24px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* --- القائمة الجانبية --- */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* مخفية لليسار */
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    z-index: 2000;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 30px;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+}
+
+.mobile-sidebar.active { left: 0; }
+
+.menu-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1999;
+    display: none;
+}
+
+.menu-overlay.active { display: block; }
+
+.sidebar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.sidebar-links { list-style: none; }
+.sidebar-links li { margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+.sidebar-links a { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 18px; }
+
+/* --- تعديلات الموبايل لضبط الصورة والكلام --- */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .main-nav { display: none; } /* إخفاء منيو الكمبيوتر */
+
+    .hero {
+        height: 100vh !important; /* تقليل الطول في الموبايل لضبط التناسب */
+        background-attachment: scroll !important; /* إلغاء Fixed لأنه يسبب غبش في الموبايل */
+        background-position: 70% center !important; /* تركيز الصورة على البرج */
+    }
+
+    .hero h1 {
+        font-size: 38px !important; /* تصغير الخط ليتناسب مع عرض الموبايل */
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 16px !important;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-gold-pro, .btn-outline-pro {
+        width: 100%;
+        margin: 0 0 10px 0 !important;
+        text-align: center;
+    }
+
+    .hero-context-card {
+        display: none; /* إخفاء البطاقة الصغيرة في الموبايل لتقليل الزحمة */
+    }
+}
+
+
+
+/* =========================================
+   تحسينات الموبايل (توسيط الأيقونات والزراير)
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* 1. توسيط أيقونات ومحتوى قطاعات الأعمال (الـ 15 شركة) */
+    .sector-card {
+        text-align: center !important; /* توسيط كل شيء داخل الكارت */
+        padding: 30px 20px !important;
+    }
+
+    .sector-icon {
+        margin: 0 auto 20px !important; /* توسيط الأيقونة في النص */
+        display: flex;
+        justify-content: center;
+    }
+
+    .sector-card ul {
+        display: inline-block; /* لضمان توسيط القائمة */
+        text-align: right; /* بقاء أسماء الشركات من اليمين لكن القائمة نفسها متوسطة */
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /* 2. توسيط وتطوير سكشن الابتكار (التكنولوجيا) */
+    .tech-content {
+        text-align: center !important; /* توسيط نصوص الذكاء الاصطناعي */
+    }
+
+    .tech-content h2 {
+        font-size: 28px !important;
+        margin: 15px 0 !important;
+    }
+
+    /* 3. ضبط الزرار (اكتشف ديجيتال هاب) ليكون فخم */
+    .tech-content .btn-gold {
+        background-color: var(--accent) !important; /* اللون الذهبي */
+        color: #000 !important;
+        border: none !important;
+        padding: 15px 40px !important;
+        border-radius: 50px !important; /* شكل بيضاوي */
+        font-weight: 900 !important;
+        font-size: 16px !important;
+        box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        cursor: pointer;
+        display: inline-block;
+        width: 100%; /* ياخد عرض الشاشة في الموبايل لسهولة الضغط */
+        max-width: 280px;
+        margin: 20px auto 0 !important;
+        transition: 0.3s;
+    }
+
+    .tech-content .btn-gold:hover {
+        background-color: #fff !important;
+        transform: translateY(-3px);
+    }
+    
+    /* توسيط البادج "المستقبل الآن" */
+    .tech-content .hero-badge {
+        margin: 0 auto 15px !important;
+        display: inline-block;
+    }
+}

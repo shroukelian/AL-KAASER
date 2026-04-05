@@ -45,3 +45,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+function toggleMobileMenu() {
+    document.getElementById('side-nav').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+    
+    // منع السكرول لما المنيو تفتح
+    if (document.getElementById('side-nav').classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}

@@ -28,73 +28,52 @@
         </div>
     </div>
 
-    <!-- الهيدر الرئيسي -->
+    <!-- الهيدر المطور -->
     <header class="main-header">
         <div class="container nav-wrap">
+            <!-- اللوجو يمين -->
             <div class="brand" onclick="location.reload()">
-                <img src="images/logo.png" alt="Al Kaaser Holding" class="main-logo">
+                <img src="images/logo.png" alt="الكاسر" class="main-logo">
                 <div class="brand-text-container">
                     <span class="company-name">الكاسر القابضة</span>
                     <span class="company-sub">AL KAASER HOLDING</span>
                 </div>
             </div>
 
+            <!-- أيقونة المنيو (تظهر في الموبايل فقط) -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- المنيو العادية (تختفي في الموبايل) -->
             <nav class="main-nav">
                 <ul class="nav-menu">
-                    <li><a href="#hero">قصتنا</a></li>
-                    <li class="has-mega">
-                        <a href="#">أنشطتنا وشركاتنا <i class="fas fa-chevron-down"></i></a>
-                        <div class="mega-menu">
-                            <div class="mega-grid">
-                                <div class="mega-col">
-                                    <h4>المال والاستثمار</h4>
-                                    <ul>
-                                        <li>إمارات الخير لصناديق الاستثمار</li>
-                                        <li>أفرو أكسبرس للوساطة</li>
-                                        <li>إس إس لتجارة الذهب</li>
-                                    </ul>
-                                </div>
-                                <div class="mega-col">
-                                    <h4>التقنية والابتكار</h4>
-                                    <ul>
-                                        <li>ديجيتال هاب</li>
-                                        <li>الحلول الذهبية لتقنية المعلومات</li>
-                                        <li>مصنع بلو داكس</li>
-                                    </ul>
-                                </div>
-                                <div class="mega-col">
-                                    <h4>التعليم والصحة</h4>
-                                    <ul>
-                                        <li>الكاسر لإدارة المدارس</li>
-                                        <li>الكاسر للإدارة وتطوير المستشفيات</li>
-                                        <li>مركز ريل تايم للتدريب</li>
-                                    </ul>
-                                </div>
-                                <div class="mega-col">
-                                    <h4>العقارات والخدمات</h4>
-                                    <ul>
-                                        <li>بوابة السواعد الخضراء للعقارات</li>
-                                        <li>بوابة السواعد الخضراء للتجارة</li>
-                                        <li>باسيفيك لتجارة الديزل</li>
-                                    </ul>
-                                </div>
-                                <div class="mega-col">
-                                    <h4>الضيافة والأسلوب</h4>
-                                    <ul>
-                                        <li>فود أو كلوك (مطاعم)</li>
-                                        <li>الملكي للفروسية</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#sustainability">الاستدامة</a></li>
-                    <li><a href="#innovation">الابتكار</a></li>
-                    <li><i class="fas fa-search search-icon"></i></li>
+                    <li><a href="#">قصتنا</a></li>
+                    <li class="has-mega"><a href="#">شركاتنا</a></li>
+                    <li><a href="#">الاستدامة</a></li>
+                    <li><a href="#">الابتكار</a></li>
+                    <li><i class="fas fa-search"></i></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- القائمة الجانبية للموبايل (Mobile Sidebar) -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#">قصتنا</a></li>
+            <li><a href="#">شركاتنا وقطاعاتنا</a></li>
+            <li><a href="#">الاستدامة</a></li>
+            <li><a href="#">الابتكار والذكاء الاصطناعي</a></li>
+            <li><a href="#">المركز الإعلامي</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
 
     <!-- قسم الهيرو سلايدر (3 سلايدات) -->
     <section class="hero-slider ">
