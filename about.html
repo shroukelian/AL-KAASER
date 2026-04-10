@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكاسر القابضة | نظرة عامة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- الهيدر الموحد -->
+     <header class="main-header">
+        <div class="container nav-wrap">
+            <!-- 1. اللوجو والاسم جهة اليمين -->
+            <div class="brand" onclick="location.href='index.html'" style="cursor: pointer;">
+                <img src="images/logo.png" alt="الكاسر" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">الكاسر القابضة</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <!-- 2. زر المنيو (الثلاث شرطات) جهة اليسار - تأكدي من وضعه هنا -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- 3. منيو الديسكتوب (تختفي في الموبايل تلقائياً بالـ CSS) -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المجموعة</a></li>
+                    <li><a href="history.html" style="color: var(--accent);">قيمنا وتاريخنا</a></li>
+                    <li><a href="leadership.html">مجلس الإدارة</a></li>
+                    <li><i class="fas fa-search search-icon"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- القائمة الجانبية للموبايل (لازم تكون موجودة في كل صفحة) -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن المجموعة</a></li>
+            <li><a href="history.html">قيمنا وتاريخنا</a></li>
+            <li><a href="leadership.html">مجلس الإدارة</a></li>
+            <li><a href="sustainability.html">الاستدامة</a></li>
+            <li><a href="invest.html">استثمر معنا</a></li>
+        </ul>
+    </div>
+    <!-- الغطاء الشفاف -->
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Hero Section خاص بالصفحة التعريفية -->
+    <section class="page-title-section about-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / <span>الكاسر القابضة</span>
+            </nav>
+            <h1>نظرة عامة على المجموعة</h1>
+            <p>ريادة استثمارية تنطلق من قلب العاصمة أبوظبي لتصل إلى الأسواق العالمية.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+
+        <!-- سيكشن من نحن المطور -->
+        <div class="about-main-row reveal">
+            <div class="about-main-text">
+                <h2>من نحن</h2>
+                <p><strong>الكاسر القابضة</strong> هي الشركة الأم لمجموعة متكاملة من الشركات والمؤسسات، يقع مقرها
+                    الرئيسي في أبوظبي – دولة الإمارات العربية المتحدة، وتُعد من الكيانات الرائدة في إدارة الاستثمارات
+                    وتنمية الأعمال على مستوى المنطقة.</p>
+                <p>تتخصص المجموعة في إدارة الشركات واستثمار رؤوس الأموال بكفاءة عالية، مع التركيز على تطوير المشاريع
+                    الاستراتيجية وخلق الفرص الاستثمارية والتجارية المستدامة لشركاتها التابعة، بما يعزز النمو ويحقق قيمة
+                    مضافة طويلة الأمد.</p>
+            </div>
+            <div class="about-main-image">
+                <!-- صورة تعبر عن فخامة أبوظبي -->
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80"
+                    alt="Abu Dhabi Business">
+            </div>
+        </div>
+
+        <!-- سيكشن القطاعات الحيوية -->
+        <div class="sectors-highlight reveal">
+            <div class="highlight-box-navy">
+                <h3>تنوع استراتيجي في قطاعات حيوية</h3>
+                <p>تندرج تحت مظلة المجموعة مجموعة متنوعة من الشركات العاملة في قطاعات تشمل: النفط والغاز،
+                    البتروكيماويات، التدريب والتطوير، التجارة العامة، الثروة الزراعية والحيوانية، بالإضافة إلى نظم
+                    المعلومات الحديثة.</p>
+                <div class="solar-tag"><i class="fas fa-sun"></i> توسعنا مؤخراً ليشمل قطاع الطاقة الشمسية كأحد أهم مصادر
+                    الطاقة المستدامة.</div>
+            </div>
+        </div>
+
+        <!-- سيكشن الرؤية والرسالة بتصميم مروّق -->
+        <div class="vision-mission-grid reveal">
+            <!-- كارت الرؤية -->
+            <div class="vm-card gold-border">
+                <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                <h3>الرؤية</h3>
+                <p>الاستثمار في الإنسان باعتباره الركيزة الأساسية للتنمية، وتعزيز ثقافة الإبداع والابتكار لبناء مستقبل
+                    مستدام، مع مد جسور التواصل الفعّال بين القطاعين العام والخاص للاستثمار النوعي.</p>
+            </div>
+
+            <!-- كارت الرسالة -->
+            <div class="vm-card blue-border">
+                <div class="vm-icon"><i class="fas fa-rocket"></i></div>
+                <h3>الرسالة</h3>
+                <p>ترسيخ مكانتنا كشركة رائدة في مجالات الاستثمار المحلية والدولية، من خلال تنمية وتطوير قطاعات متنوعة،
+                    صناعية وتنموية، وتقديم حلول مبتكرة ومنتجات عالية الجودة.</p>
+                <ul class="mission-points">
+                    <li>بناء وتعزيز علاقات تجارية دولية قوية.</li>
+                    <li>تقديم حلول متكاملة تلبي احتياجات العملاء.</li>
+                    <li>ترسيخ مبادئ الاستدامة في جميع أعمالنا.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <!-- العمود الأول: المركز الإعلامي -->
+            <div class="footer-column">
+                <h4>المركز الإعلامي</h4>
+                <ul>
+                    <li><a href="#">البيانات الصحفية</a></li>
+                    <li><a href="#">مكتبة الصور والفيديو</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثاني: روابط سريعة -->
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">شركاؤنا</a></li>
+                    <li><a href="#">الموردون</a></li>
+                    <li><a href="#">تنبيه من الاحتيال</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثالث: استكشف الكاسر -->
+            <div class="footer-column">
+                <h4>استكشف الكاسر</h4>
+                <ul>
+                    <li><a href="about.html">عن المجموعة</a></li>
+                    <li><a href="leadership.html">مجلس الإدارة</a></li> <!-- هنا -->
+                    <li><a href="sustainability.html">الاستدامة والتحول</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الرابع: معلومات الشركة واللوجو -->
+            <div class="footer-column brand-info-col">
+                <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>شركة الكاسر القابضة</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> أبوظبي، الإمارات العربية المتحدة</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 الكاسر القابضة. جميع الحقوق محفوظة.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

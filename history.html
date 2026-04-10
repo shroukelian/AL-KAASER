@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قيمنا وتاريخنا | الكاسر القابضة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <!-- 1. اللوجو والاسم جهة اليمين -->
+            <div class="brand" onclick="location.href='index.html'" style="cursor: pointer;">
+                <img src="images/logo.png" alt="الكاسر" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">الكاسر القابضة</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <!-- 2. زر المنيو (الثلاث شرطات) جهة اليسار - تأكدي من وضعه هنا -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- 3. منيو الديسكتوب (تختفي في الموبايل تلقائياً بالـ CSS) -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المجموعة</a></li>
+                    <li><a href="history.html" style="color: var(--accent);">قيمنا وتاريخنا</a></li>
+                    <li><a href="leadership.html">مجلس الإدارة</a></li>
+                    <li><i class="fas fa-search search-icon"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- القائمة الجانبية للموبايل (لازم تكون موجودة في كل صفحة) -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن المجموعة</a></li>
+            <li><a href="history.html">قيمنا وتاريخنا</a></li>
+            <li><a href="leadership.html">مجلس الإدارة</a></li>
+            <li><a href="sustainability.html">الاستدامة</a></li>
+            <li><a href="invest.html">استثمر معنا</a></li>
+        </ul>
+    </div>
+    <!-- الغطاء الشفاف -->
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+    <!-- Hero Section: صورة فخمة من الإمارات (أبوظبي) -->
+    <section class="page-title-section history-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / <span>قيمنا وتاريخنا</span>
+            </nav>
+            <h1 class="reveal">مسيرة مكللة بالقيم والريادة</h1>
+            <p class="reveal delay-1">جذورنا راسخة في أرض الإمارات، وطموحنا يعانق عنان السماء.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- سكشن تاريخنا -->
+        <section class="section-padding container">
+            <div class="history-layout reveal">
+                <div class="history-text">
+                    <span class="sub-badge">تاريخنا</span>
+                    <h2>تطور استراتيجي مستمر</h2>
+                    <p>انطلقت الكاسر القابضة برؤية طموحة تهدف إلى بناء كيان استثماري متكامل يسهم في دعم الاقتصاد وتنمية
+                        القطاعات الحيوية في دولة الإمارات العربية المتحدة وخارجها.</p>
+                    <p>ومنذ تأسيسها، عملت الشركة على توسيع نطاق أعمالها وتنويع استثماراتها لتشمل مجالات متعددة، من
+                        أبرزها النفط والغاز، البتروكيماويات، التجارة العامة، ونظم المعلومات الحديثة. واليوم، نواصل تعزيز
+                        مكانتنا كشريك استراتيجي موثوق في قطاع الطاقة الشمسية والابتكار المستدام.</p>
+                </div>
+                <div class="history-image">
+                    <!-- صورة تاريخية أو تعبيرية عن النهضة -->
+                    <img src="https://images.unsplash.com/photo-1549944850-84e00be4203b?auto=format&fit=crop&w=800&q=80"
+                        alt="History of Growth">
+                </div>
+            </div>
+        </section>
+
+        <!-- سكشن قيمنا (6 قيم) -->
+        <section class="values-section section-padding">
+            <div class="container">
+                <div class="section-title reveal">
+                    <span class="sub-badge" style="text-align: center;">مبادئنا</span>
+                    <h2 style="text-align: center;">قيمنا الراسخة</h2>
+                    <div class="line-center"></div>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card reveal delay-1">
+                        <i class="fas fa-award"></i>
+                        <h4>الاحترافية والتميز</h4>
+                        <p>نلتزم بأعلى معايير الجودة والأداء، ونسعى دائمًا لتقديم قيمة مضافة تفوق التوقعات.</p>
+                    </div>
+                    <div class="value-card reveal delay-2">
+                        <i class="fas fa-handshake"></i>
+                        <h4>الشفافية والنزاهة</h4>
+                        <p>نبني علاقاتنا على الثقة والمصداقية، ونعتمد الوضوح التام في جميع تعاملاتنا.</p>
+                    </div>
+                    <div class="value-card reveal delay-3">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>الابتكار والتطوير</h4>
+                        <p>نؤمن بأن الابتكار هو مفتاح النمو، ونسعى لتبني أحدث الحلول لمواكبة المستقبل.</p>
+                    </div>
+                    <div class="value-card reveal delay-1">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>الشراكة والتكامل</h4>
+                        <p>نعمل بروح الفريق الواحد، ونسعى لبناء شراكات استراتيجية تحقق النجاح المشترك.</p>
+                    </div>
+                    <div class="value-card reveal delay-2">
+                        <i class="fas fa-leaf"></i>
+                        <h4>الاستدامة والمسؤولية</h4>
+                        <p>نحرص على التوازن بين النمو الاقتصادي والحفاظ على البيئة وخدمة المجتمع.</p>
+                    </div>
+                    <div class="value-card reveal delay-3">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>التركيز على الإنسان</h4>
+                        <p>نضع الإنسان في قلب اهتماماتنا، ونعمل على تطوير الكفاءات وتمكينها.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- سكشن الفلسفة المؤسسية (التعاون، الكفاءة، الاحترام) -->
+        <section class="philosophy-section container section-padding">
+            <!-- الكفاءة والأداء -->
+            <div class="phil-row reveal">
+                <div class="phil-icon-box blue-box"><i class="fas fa-tachometer-alt"></i></div>
+                <div class="phil-text">
+                    <h3>الكفاءة والأداء المتميز</h3>
+                    <p>في الكاسر القابضة، تُعد الكفاءة محورًا أساسيًا في جميع أعمالنا، حيث يشكّل الأداء المتميز الدافع
+                        الرئيسي لتحقيق أهدافنا. نلتزم بنهج عملي قائم على تقليل الهدر وتعظيم الاستفادة من الإمكانات بما
+                        يخدم الوطن والمجتمع.</p>
+                </div>
+            </div>
+
+            <!-- روح التعاون -->
+            <div class="phil-row reverse reveal">
+                <div class="phil-icon-box gold-box"><i class="fas fa-users"></i></div>
+                <div class="phil-text">
+                    <h3>روح التعاون والشراكة</h3>
+                    <p>نؤمن بأن روح التعاون هي أساس النجاح. نعمل جنبًا إلى جنب مع شركائنا، مستثمرين قوتنا الجماعية
+                        لتحقيق نتائج نوعية تعود بالنفع على جميع الأطراف وتسريع وتيرة الابتكار.</p>
+                </div>
+            </div>
+
+            <!-- الاحترام المتبادل -->
+            <div class="phil-row reveal">
+                <div class="phil-icon-box blue-box"><i class="fas fa-heart"></i></div>
+                <div class="phil-text">
+                    <h3>الاحترام المتبادل والتنوع</h3>
+                    <p>نحرص على ترسيخ ثقافة تحتضن التنوع وتُقدّر الاختلاف. نلتزم ببناء بيئة عمل قائمة على الثقة نولي
+                        فيها اهتمامًا حقيقيًا برفاه الأفراد وتطويرهم المهني والأخلاقي.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <!-- العمود الأول: المركز الإعلامي -->
+            <div class="footer-column">
+                <h4>المركز الإعلامي</h4>
+                <ul>
+                    <li><a href="#">البيانات الصحفية</a></li>
+                    <li><a href="#">مكتبة الصور والفيديو</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثاني: روابط سريعة -->
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">شركاؤنا</a></li>
+                    <li><a href="#">الموردون</a></li>
+                    <li><a href="#">تنبيه من الاحتيال</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الثالث: استكشف الكاسر -->
+            <div class="footer-column">
+                <h4>استكشف الكاسر</h4>
+                <ul>
+                    <li><a href="about.html">عن المجموعة</a></li>
+                    <li><a href="history.html">قيمنا وتاريخنا</a></li>
+                    <li><a href="leadership.html">مجلس الإدارة</a></li>
+                    <li><a href="sustainability.html">الاستدامة والتحول</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود الرابع: معلومات الشركة واللوجو -->
+            <div class="footer-column brand-info-col">
+                <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>شركة الكاسر القابضة</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> أبوظبي، الإمارات العربية المتحدة</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 الكاسر القابضة. جميع الحقوق محفوظة.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

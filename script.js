@@ -56,3 +56,85 @@ function toggleMobileMenu() {
         document.body.style.overflow = 'auto';
     }
 }
+
+// بيانات المنتجات التفصيلية (مستخرجة من ملف الـ PDF والبروفايل)
+const energyProducts = {
+    'oil': {
+        title: 'تجارة النفط الخام',
+        tag: 'قطاع التجارة الدولية',
+        desc: 'نعمل كشريك موثوق في سلسلة توريد النفط والغاز، حيث نوفر منتجات عالية الجودة لمختلف التطبيقات الصناعية عبر شبكة توريد عالمية تضمن كفاءة الوصول والاستدامة.'
+    },
+    'diesel': {
+        title: 'تجارة الديزل (باسيفيك)',
+        tag: 'باسيفيك لتجارة الديزل',
+        desc: 'متخصصون في توريد وتوزيع وقود الديزل بجودة عالية، مع التركيز على تلبية احتياجات قطاعات النقل والإنشاءات والطاقة في دولة الإمارات العربية المتحدة.'
+    },
+    'lng': {
+        title: 'الغاز الطبيعي المسال (LNG)',
+        tag: 'الغاز المسال والبيئة',
+        desc: 'نساهم في توفير حلول الغاز الطبيعي المسال كوقود نظيف ومستدام، مما يدعم توجهات الدولة في تقليل الانبعاثات الكربونية وتحقيق أمن الطاقة.'
+    },
+    'jetfuel': {
+        title: 'وقود الطائرات',
+        tag: 'الخدمات اللوجستية للطيران',
+        desc: 'نعمل على تأمين إمدادات وقود الطائرات وفق المعايير الدولية الصارمة، لخدمة قطاع الطيران المتنامي وربط الأسواق العالمية بكفاءة.'
+    },
+    'solar': {
+        title: 'الطاقة الشمسية والنظيفة',
+        tag: 'Eco Sustainability',
+        desc: 'نبتكر في حلول الطاقة المتجددة من خلال "بوابة السواعد الخضراء"، عبر تصميم أنظمة طاقة شمسية ذكية تساهم في خفض التكاليف التشغيلية وحماية البيئة.'
+    }
+};
+
+function showProductDetails(id) {
+    const product = energyProducts[id];
+    const modal = document.getElementById('details-modal');
+    const contentArea = document.getElementById('modal-content-area');
+
+    contentArea.innerHTML = `
+        <div class="modal-content-wrap">
+            <span class="modal-tag">${product.tag}</span>
+            <h2>${product.title}</h2>
+            <p>${product.desc}</p>
+            <button class="btn-gold-pro" style="margin-top:30px; width:100%;" onclick="closeProductDetails()">إغلاق</button>
+        </div>
+    `;
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // منع سكرول الصفحة خلف النافذة
+}
+
+function closeProductDetails() {
+    document.getElementById('details-modal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+
+function showSlides() {
+    // السطر ده هو اللي هيحل الأيرور (لو مفيش سلايدات في الصفحة، اخرج من الوظيفة)
+    if (slides.length === 0) return;
+
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    currentSlideIndex++;
+    if (currentSlideIndex > slides.length) { currentSlideIndex = 1 }
+    
+    // التأكد من أن العنصر موجود قبل الوصول لخصائصه
+    if (slides[currentSlideIndex - 1]) {
+        slides[currentSlideIndex - 1].classList.add('active');
+    }
+    if (dots[currentSlideIndex - 1]) {
+        dots[currentSlideIndex - 1].classList.add('active');
+    }
+    
+    setTimeout(showSlides, 5000);
+}
+
+// تشغيل الوظيفة
+showSlides();
+
+// وظيفة الدفع (للتجربة)
+function handlePayment() {
+    alert("سيتم توجيهك الآن لبوابة الدفع الآمنة لسداد 500 درهم رسوم التسجيل.");
+}
