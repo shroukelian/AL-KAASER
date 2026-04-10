@@ -138,3 +138,17 @@ showSlides();
 function handlePayment() {
     alert("سيتم توجيهك الآن لبوابة الدفع الآمنة لسداد 500 درهم رسوم التسجيل.");
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ابحث عن كل اللينكات اللي بتودي للايميل
+    const contactLinks = document.querySelectorAll('a[href^="mailto:"]');
+    
+    contactLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // منع المتصفح من التصرف العادي
+            e.preventDefault();
+            // فتح تطبيق الإيميل يدوياً
+            window.location.href = "mailto:info@alkaaser.ae";
+        });
+    });
+});
