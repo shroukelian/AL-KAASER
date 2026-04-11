@@ -2103,7 +2103,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 .logos-track {
     display: flex;
     width: calc(250px * 10); /* عرض إجمالي للشعارات */
-    animation: scrollLogos 25s linear infinite; /* حركة لانهائية */
 }
 
 .logo-item {
