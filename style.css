@@ -1872,7 +1872,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 .leader-info h3 {
-    font-size: 32px;
+    font-size: 27px;
     color: var(--primary);
     margin-bottom: 10px;
     font-weight: 900;
