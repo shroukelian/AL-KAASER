@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركاء النجاح | الكاسر القابضة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* تأكيد ظهور المحتوى في هذه الصفحة تحديداً */
+        .reveal { opacity: 1 !important; transform: translateY(0) !important; }
+        
+        /* ضبط الكارت اللي كان طالع أبيض وفاضي */
+        .join-card {
+            background: #004685 !important; /* اللون الكحلي الصريح */
+            color: #ffffff !important;
+            padding: 60px 40px !important;
+            border-radius: 30px !important;
+            text-align: center !important;
+            margin-top: 50px !important;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+        }
+        .join-card h3 { color: #fff !important; font-size: 30px !important; margin-bottom: 15px !important; }
+        .join-card p { color: rgba(255,255,255,0.8) !important; font-size: 18px !important; margin-bottom: 30px !important; }
+    </style>
+</head>
+<body class="bg-light">
+
+       <header class="main-header">
+        <div class="container nav-wrap">
+            <div class="brand" onclick="location.reload()">
+                <img src="images/logo.png" alt="الكاسر" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">الكاسر القابضة</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">الكاسر القابضة</a></li>
+
+                    <!-- إضافة رابط قيمنا وتاريخنا هنا -->
+                    <li><a href="history.html">قيمنا وتاريخنا</a></li>
+
+                    <li><a href="leadership.html">مجلس الإدارة</a></li>
+                    <li><a href="sustainability.html">الاستدامة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">الكاسر القابضة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="history.html">قيمنا وتاريخنا</a></li>
+            <li><a href="leadership.html">مجلس الإدارة</a></li>
+            <li><a href="invest.html">استثمر معنا</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- عنوان الصفحة -->
+      <section class="page-title-section partners-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / <span>شركاء النجاح</span>
+            </nav>
+            <h1>شراكاتنا الاستراتيجية</h1>
+            <p>نؤمن في الكاسر القابضة بأن التكامل هو مفتاح الريادة، ونعتز بشراكاتنا مع كبرى المؤسسات لتحقيق نمو مستدام.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+        
+        <!-- مقدمة الشركاء -->
+        <div class="partners-intro reveal">
+            <div class="section-title">
+                <span class="sub-badge">علاقاتنا</span>
+                <h2>نبني المستقبل معاً</h2>
+                <div class="line-right"></div>
+            </div>
+            <p class="intro-p">نعمل جنبًا إلى جنب مع شركائنا والشركات ذات التوجه المشترك، مستثمرين قوتنا الجماعية لتحقيق نتائج نوعية تعود بالنفع على جميع الأطراف، وتسريع وتيرة الابتكار في مختلف القطاعات الحيوية.</p>
+        </div>
+
+        <!-- شبكة الشعارات (Logo Grid) -->
+        <div class="partners-grid-wrapper reveal delay-1">
+            <!-- قطاع الطاقة والغاز -->
+            <div class="partner-sector">
+                <h3>قطاع الطاقة والبتروكيماويات</h3>
+                <div class="logos-grid">
+                    <div class="logo-item"><img src="partner1.png" alt="Partner"></div>
+                    <div class="logo-item"><img src="partner2.png" alt="Partner"></div>
+                    <div class="logo-item"><img src="partner3.png" alt="Partner"></div>
+                    <div class="logo-item"><img src="partner4.png" alt="Partner"></div>
+                </div>
+            </div>
+
+            <!-- قطاع الاستثمار والتجارة -->
+            <div class="partner-sector">
+                <h3>قطاع الاستثمار والتجارة العامة</h3>
+                <div class="logos-grid">
+                    <div class="logo-item"><img src="partner5.png" alt="Partner"></div>
+                    <div class="logo-item"><img src="partner6.png" alt="Partner"></div>
+                    <div class="logo-item"><img src="partner7.png" alt="Partner"></div>
+                </div>
+            </div>
+    </div>
+
+        <!-- المربع اللي كان فاضي (تم إصلاحه) -->
+        <div class="join-card">
+            <h3>هل ترغب في بناء شراكة استراتيجية؟</h3>
+            <p>نحن دائماً منفتحون على الفرص الاستثمارية والتعاون البنّاء الذي يحقق القيم المشتركة للمجموعة ولشركائنا.</p>
+            <button class="btn-gold" style="background: var(--accent); color:#000; padding: 15px 40px; border:none; border-radius:50px; font-weight:900; cursor:pointer;" onclick="location.href='mailto:info@alkaaser.ae'">تواصل مع قطاع تطوير الأعمال</button>
+        </div>
+
+    </main>
+
+    <footer class="footer" style="background:#0c0c0c; color:white; padding: 40px 0; text-align: center; margin-top: 80px;">
+        <p>© 2024 الكاسر القابضة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

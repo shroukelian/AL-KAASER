@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body class="bg-light">
 
     <!-- الهيدر الموحد -->
@@ -49,7 +51,7 @@
             <div class="contact-blue-side">
                 <h2>تواصل معنا</h2>
                 <p>نحن هنا للرد على استفساراتكم وبناء شراكات استثمارية جديدة ومستدامة.</p>
-                
+
                 <div class="contact-info-list">
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -80,21 +82,21 @@
                     <a href="#"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
-            
+
             <!-- الجزء الأبيض: نموذج المراسلة -->
             <div class="contact-white-side">
-                <form class="kaaser-form">
+                <form class="kaaser-form" action="https://formspree.io/f/your-id" method="POST">
                     <div class="input-group">
                         <label>الاسم الكامل</label>
-                        <input type="text" placeholder="ادخل اسمك هنا" required>
+                        <input type="text" name="full_name" placeholder="ادخل اسمك هنا" required>
                     </div>
                     <div class="input-group">
                         <label>البريد الإلكتروني</label>
-                        <input type="email" placeholder="email@example.com" required>
+                        <input type="email" name="email" placeholder="email@example.com" required>
                     </div>
                     <div class="input-group">
                         <label>الموضوع</label>
-                        <select>
+                        <select name="subject">
                             <option>استفسار عام</option>
                             <option>فرصة استثمارية</option>
                             <option>طلب شراكة</option>
@@ -103,15 +105,18 @@
                     </div>
                     <div class="input-group">
                         <label>رسالتك</label>
-                        <textarea placeholder="كيف يمكننا مساعدتك؟" required></textarea>
+                        <textarea name="message" placeholder="كيف يمكننا مساعدتك؟" required></textarea>
                     </div>
+                    <!-- حقل مخفي للتأكيد على الإيميل المستهدف (في حال استخدام خدمات معينة) -->
+                    <input type="hidden" name="_to" value="info@alkaaser.ae">
+
                     <button type="submit" class="btn-submit-gold">إرسال الطلب الآن</button>
                 </form>
             </div>
         </div>
     </main>
 
-  <footer class="main-footer">
+    <footer class="main-footer">
         <div class="container footer-grid-wrap">
             <!-- العمود الأول: المركز الإعلامي -->
             <div class="footer-column">
@@ -171,4 +176,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

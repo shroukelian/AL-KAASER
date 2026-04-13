@@ -2306,7 +2306,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 .about-hero {
     /* صورة خلفية إماراتية (مثل أبراج الاتحاد أو نخلة جميرا) */
     background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)), 
-                url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat !important;
+                url('https://static.myconnect.ae/-/media/yasconnect/project/ppad/plan-your-visit/famous-landmarks/article-qaw1.jpg') center/cover no-repeat !important;
 }
 
 .about-main-row {
@@ -2774,4 +2774,93 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
         padding: 30px 20px;
     }
     .block-header h2 { font-size: 20px; }
+}
+
+/* --- تنسيق صفحة شركاء النجاح --- */
+
+.partners-hero {
+    background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)), 
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat !important;
+}
+
+.intro-p {
+    font-size: 19px;
+    color: #555;
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+
+.partner-sector {
+    margin-bottom: 80px;
+}
+
+.partner-sector h3 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+    padding-right: 15px;
+    border-right: 4px solid var(--accent);
+}
+
+/* شبكة الشعارات */
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.logo-item {
+    background: #fff;
+    border: 1px solid #eee;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%); /* شعارات رمادية في البداية */
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.logo-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transform: translateY(-5px);
+}
+
+.logo-item:hover img {
+    filter: grayscale(0%); /* تتحول للملون عند الوقوف عليها */
+    opacity: 1;
+}
+
+/* كارت الانضمام */
+.join-partners {
+    margin-top: 100px;
+}
+
+.join-card {
+    background: var(--primary-blue);
+    color: white;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.join-card h3 { font-size: 28px; margin-bottom: 15px; }
+.join-card p { font-size: 18px; opacity: 0.8; margin-bottom: 35px; }
+
+/* للموبايل */
+@media (max-width: 768px) {
+    .logos-grid { grid-template-columns: repeat(2, 1fr); }
+    .join-card { padding: 40px 20px; }
+    .logo-item { height: 100px; }
 }
