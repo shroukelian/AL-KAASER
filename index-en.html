@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Kaaser Holding | Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="utility-links">
+                <a href="leadership.html">Board of Directors</a>
+                <a href="partners.html">Success Partners</a>
+                <a href="careers.html">Careers</a>
+                <!-- <a href="invest.html">Invest With Us</a> -->
+                <a href="contact.html" class="top-contact-link">Contact Us</a>
+            </div>
+            <!-- في الشريط العلوي (Top Bar) -->
+            <div class="lang-switch">
+                <a href="index.html">العربية</a> | <strong>English</strong>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <div class="brand" onclick="location.reload()">
+                <img src="images/logo.png" alt="Al Kaaser" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">Al Kaaser Holding</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About Al Kaaser</a></li>
+                    <!-- Link to Values & History -->
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><a href="sustainability-en.html">Sustainability</a></li>
+                    <li><a href="contact-en.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html">Al Kaaser Holding</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
+            <li><a href="history-en.html">Values & History</a></li>
+            <li><a href="leadership-en.html">Board of Directors</a></li>
+            <li><a href="invest-en.html">Invest With Us</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+    <section class="hero-slider">
+
+        <div class="slide active"
+            style="background-image: url('https://static.myconnect.ae/-/media/yasconnect/project/ppad/plan-your-visit/famous-landmarks/article-qaw1.jpg');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Your Trustworthy Partner</span>
+                        <h1>Investment Energy <br> Unlocking the Future</h1>
+                        <p>We invest in human capital and innovate solutions to bridge the gap between public and
+                            private sectors in the UAE.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='#business'">Explore Our
+                                Companies</button>
+                            <button class="btn-outline-pro" onclick="location.href='#contact'">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Sustainability & Environment</span>
+                        <h1>Towards a Green <br> and Sustainable Future</h1>
+                        <p>At Al Kaaser Holding, we are committed to the highest standards of environmental
+                            sustainability and low-carbon green growth.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='sustainability-en.html'">Sustainability
+                                Report</button>
+                            <button class="btn-outline-pro" onclick="location.href='#about'">Our Vision</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Digital Innovation</span>
+                        <h1>Artificial Intelligence <br> Driving Our Investments</h1>
+                        <p>Through "Digital Hub", we provide advanced technical solutions to enhance business efficiency
+                            and comprehensive digital transformation.</p>
+                        <div class="hero-actions">
+                            <button class="btn-gold-pro" onclick="location.href='#innovation'">Our Tech
+                                Solutions</button>
+                            <button class="btn-outline-pro" onclick="location.href='#business'">Our Sectors</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-context-card">
+            <div class="context-img">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=200&q=80"
+                    alt="Innovation">
+            </div>
+            <div class="context-text">
+                <h4>Unlocking AI Potential</h4>
+                <p>Our technical solutions at Digital Hub</p>
+            </div>
+        </div>
+
+        <div class="slider-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- About Section - Al Kaaser Profile -->
+    <section id="about" class="section-padding container">
+        <div class="vision-grid reveal">
+            <div class="vision-text reveal-left delay-1">
+                <span class="sub-badge">About Us</span>
+                <h2>Al Kaaser Holding: The Parent Company</h2>
+                <p>A group of companies and institutions headquartered in the heart of Abu Dhabi, UAE. We specialize in
+                    corporate management, investment, and petrochemicals, working with a strategic vision to create
+                    global investment and trade opportunities.</p>
+
+                <div class="mission-mission-box">
+                    <div class="mini-card">
+                        <h3><i class="fas fa-eye"></i> Vision</h3>
+                        <p>Investing in people, supporting creativity and innovation, building the future, and bridging
+                            the public and private sectors for a better tomorrow.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3><i class="fas fa-rocket"></i> Mission</h3>
+                        <p>Our ambition is limitless; we seek to provide the best innovative solutions, achieve the
+                            highest sustainability standards, and build international relations that support the
+                            economy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-image reveal-right delay-2">
+                <video autoplay muted loop playsinline class="vision-video">
+                    <source src="Video .mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Goals Bar -->
+        <div class="goals-bar reveal delay-3">
+            <div class="goal-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Business development and continuous research for the latest technologies</span>
+            </div>
+            <div class="goal-item">
+                <i class="fas fa-handshake"></i>
+                <span>Empowering companies and enhancing local and international economic growth</span>
+            </div>
+        </div>
+
+        <!-- Subsidiaries Section -->
+        <div class="subsidiaries-section reveal delay-4">
+            <div class="section-header-left">
+                <h3>Group Companies</h3>
+                <p>Al Kaaser Holding oversees 15 leading companies and institutions:</p>
+            </div>
+
+            <div class="companies-grid">
+                <div class="company-tag">Emirates Al Khair for Investment Funds</div>
+                <div class="company-tag">Communication Gate for Business Services</div>
+                <div class="company-tag">Green Arms Gate for Real Estate</div>
+                <div class="company-tag">Al Kaaser School Management</div>
+                <div class="company-tag">Al Kaaser Hospital Management & Development</div>
+                <div class="company-tag">Real Time Security & Training Center</div>
+                <div class="company-tag">Green Arms Gate for General Trade</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adnoc-stats-section">
+        <div class="fixed-gradient-overlay">
+            <div class="container adnoc-grid">
+
+                <div class="adnoc-stats-info">
+                    <span class="hero-badge">Numbers & Achievements</span>
+                    <h2>Making a Difference <br> in Every Sector</h2>
+                    <p>Al Kaaser Holding is committed to driving innovation and economic growth in the UAE through a
+                        diverse investment portfolio serving the vision of the future.</p>
+                </div>
+
+                <div class="adnoc-numbers-list">
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">15</span>
+                            <div class="stat-title">Subsidiaries</div>
+                            <p class="stat-desc">Operating in 5 vital economic sectors</p>
+                        </div>
+                    </div>
+
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">2030</span>
+                            <div class="stat-title">Sustainable Vision</div>
+                            <p class="stat-desc">Contributing to UAE's Vision goals</p>
+                        </div>
+                    </div>
+
+                    <div class="adnoc-stat-card">
+                        <div class="adnoc-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="adnoc-num-wrap">
+                            <span class="big-num">100%</span>
+                            <div class="stat-title">Innovative Solutions</div>
+                            <p class="stat-desc">Full commitment to quality and excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Grid -->
+    <section id="business" class="section-padding container">
+        <div class="section-title">
+            <span class="sub-badge" style="text-align: center;">Our Investment Portfolio</span>
+            <h2 style="text-align: center;">Sectors & Companies</h2>
+            <div class="line-center"></div>
+        </div>
+
+        <div class="sectors-grid">
+            <div class="sector-card reveal delay-1">
+                <div class="sector-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Finance & Investment</h3>
+                <ul>
+                    <li>Emirates Al Khair for Investment Funds</li>
+                    <li>Afro Express for Trade Brokerage</li>
+                </ul>
+            </div>
+
+            <div class="sector-card reveal delay-3">
+                <div class="sector-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Education & Healthcare</h3>
+                <ul>
+                    <li>Al Kaaser School Management</li>
+                    <li>Al Kaaser Hospital Management</li>
+                    <li>Real Time Training Center</li>
+                </ul>
+            </div>
+
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-city"></i></div>
+                <h3>Real Estate & Logistics</h3>
+                <ul>
+                    <li>Green Arms Gate for Real Estate</li>
+                    <li>Green Arms Gate for General Trade</li>
+                    <li>Communication Gate for Business Services</li>
+                </ul>
+            </div>
+
+            <div class="sector-card reveal delay-1">
+                <div class="sector-icon"><i class="fas fa-gas-pump"></i></div>
+                <h3>Energy & Petroleum Products</h3>
+                <ul class="product-links">
+                    <li onclick="showProductDetails('oil')">Crude Oil Trading</li>
+                    <li onclick="showProductDetails('diesel')">Diesel Trading (Pacific)</li>
+                    <li onclick="showProductDetails('lng')">Liquefied Natural Gas (LNG)</li>
+                    <li onclick="showProductDetails('jetfuel')">Aviation Fuel</li>
+                    <li onclick="showProductDetails('solar')">Solar & Clean Energy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="tech-section">
+        <div class="container tech-wrapper">
+            <div class="tech-visual">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                    alt="Technology">
+            </div>
+            <div class="tech-content">
+                <span class="hero-badge">Future is Now</span>
+                <h2>Bridging Connections <br>Through AI</h2>
+                <p>At Al Kaaser Holding, we work on employing the latest AI technologies to link the public and private
+                    sectors, improving efficiency in line with the UAE Digital Vision 2030.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Partners Section -->
+    <section class="partners-section reveal">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-badge">Strategic Relationships</span>
+                <h2>Success Partners</h2>
+                <p>We pride ourselves on collaborating with elite global institutions and companies to foster innovation
+                    and growth.</p>
+            </div>
+
+            <div class="logos-slider">
+                <div class="logos-track">
+                    <div class="logo-item"><img src="images/p-logo1.png" alt="Partner 1"></div>
+                    <div class="logo-item"><img src="images/p-logo2.png" alt="Partner 2"></div>
+                    <div class="logo-item"><img src="images/p-logo3.png" alt="Partner 3"></div>
+                    <div class="logo-item"><img src="images/نور.jpeg" alt="Partner 5"></div>
+                </div>
+            </div>
+
+            <div class="partners-notifications">
+                <div class="notif-label">Latest Announcements:</div>
+                <div class="notif-content">
+                    <marquee direction="left" scrollamount="5">
+                        🚀 Signed a collaboration agreement with "TAQA" to develop solar energy solutions .. 🏆 Al
+                        Kaaser Group honored as Best Strategic Partner of 2024 .. 🤝 Digital Hub joins the National
+                        Digital Innovation Initiative ..
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <div class="footer-column">
+                <h4>Media Center</h4>
+                <ul>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Photo & Video Library</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Fraud Alert</a></li>
+                    <li><a href="privacy-en.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore Al Kaaser</h4>
+                <ul>
+                    <li><a href="about-en.html">About the Group</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><a href="sustainability-en.html">Sustainability & Transformation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column brand-info-col">
+                <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>Al Kaaser Holding Company</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Abu Dhabi, United Arab Emirates</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 Al Kaaser Holding. All Rights Reserved.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <a href="index.html" class="lang-float-btn" title="Switch to English">
+        <i class="fas fa-language"></i>
+        <span>AR</span>
+    </a>
+</body>
+
+</html>

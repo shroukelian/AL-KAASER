@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Al Kaaser Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <!-- Logo & Brand (Left side in English) -->
+            <div class="brand" onclick="location.href='index-en.html'" style="cursor: pointer;">
+                <img src="images/logo.png" alt="Al Kaaser" class="main-logo">
+                <div class="brand-text-container" style="border-right: none; border-left: 2px solid #ddd; padding-right: 0; padding-left: 15px;">
+                    <span class="company-name">Al Kaaser Holding</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html">About Us</a></li>
+            <li><a href="history-en.html">Values & History</a></li>
+            <li><a href="leadership-en.html">Board of Directors</a></li>
+            <li><a href="sustainability-en.html">Sustainability</a></li>
+            <li><a href="careers-en.html">Careers</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index-en.html">Home</a> / <span>Join Our Team</span>
+            </nav>
+            <h1>Promising Career Paths</h1>
+            <p>We are looking for creative and passionate individuals to help build the future of investment in the UAE.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+        <div class="career-container reveal active">
+            <div class="form-intro">
+                <h2>Submit Your CV</h2>
+                <p>Become part of the Al Kaaser Holding family. Apply now via the form below.</p>
+            </div>
+
+            <form class="pro-form career-form">
+                <!-- Form Grid -->
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Job Specialization</label>
+                        <input type="text" placeholder="e.g., Engineer, Accountant, IT" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Years of Experience</label>
+                        <select required>
+                            <option value="">Choose...</option>
+                            <option>Fresh Graduate</option>
+                            <option>1-3 Years</option>
+                            <option>3-7 Years</option>
+                            <option>More than 7 Years</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Modern Upload Box -->
+                <div class="upload-section">
+                    <label>Attach CV and Documents (PDF / Word)</label>
+                    <div class="modern-upload-box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop files here or click to browse</p>
+                        <input type="file" required accept=".pdf,.doc,.docx" multiple>
+                    </div>
+                    <small style="color: #888;">* You can upload multiple files (CV, Certificates, ID).</small>
+                </div>
+
+                <button type="submit" class="btn-gold-pro full-btn">
+                    Submit Application <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="background:#0c0c0c; color:white; padding: 60px 0; text-align: center; margin-top: 50px;">
+        <p>© 2024 Al Kaaser Holding. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating Language Switcher Icon -->
+    <a href="careers.html" class="lang-float-btn" title="Switch to Arabic">
+        <i class="fas fa-language"></i>
+        <span>AR</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Kaaser Holding | Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <!-- 1. Logo and Brand (Left side in English) -->
+            <div class="brand" onclick="location.href='index-en.html'" style="cursor: pointer;">
+                <img src="images/logo.png" alt="Al Kaaser" class="main-logo">
+                <div class="brand-text-container">
+                    <span class="company-name">Al Kaaser Holding</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+
+            <!-- 2. Menu Toggle (Right side in English) -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- 3. Desktop Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html" style="color: var(--accent);">About Us</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><i class="fas fa-search search-icon"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html">About Us</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
+            <li><a href="history-en.html">Values & History</a></li>
+            <li><a href="leadership-en.html">Board of Directors</a></li>
+            <li><a href="invest-en.html">Invest with Us</a></li>
+        </ul>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Page Title Hero Section -->
+    <section class="page-title-section about-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index-en.html">Home</a> / <span>Al Kaaser Holding</span>
+            </nav>
+            <h1>Group Overview</h1>
+            <p>Investment leadership originating from the heart of Abu Dhabi to reach global markets.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+
+        <!-- About Us Section -->
+        <div class="about-main-row reveal">
+            <div class="about-main-text">
+                <h2>Who We Are</h2>
+                <p><strong>Al Kaaser Holding</strong> is the parent company of an integrated group of companies and institutions, headquartered in Abu Dhabi – United Arab Emirates. It is considered one of the leading entities in investment management and business development across the region.</p>
+                <p>The group specializes in corporate management and high-efficiency capital investment, focusing on developing strategic projects and creating sustainable investment and trade opportunities for its subsidiaries, thereby enhancing growth and achieving long-term added value.</p>
+            </div>
+            <div class="about-main-image">
+                <img src="https://www.terhalak.com/wp-content/uploads/2020/10/Abu-Dhabi.jpg" alt="Abu Dhabi Business">
+            </div>
+        </div>
+
+        <!-- Vital Sectors Highlight -->
+        <div class="sectors-highlight reveal">
+            <div class="highlight-box-navy">
+                <h3>Strategic Diversity in Vital Sectors</h3>
+                <p>The group operates across a diverse range of sectors including: Oil and Gas, Petrochemicals, Training and Development, General Trade, Agricultural and Livestock wealth, as well as modern Information Systems and technologies.</p>
+                <div class="solar-tag"><i class="fas fa-sun"></i> We have recently expanded into the solar energy sector as a key pillar of sustainable energy in the Gulf.</div>
+            </div>
+        </div>
+
+        <!-- Vision and Mission Section -->
+        <div class="vision-mission-grid reveal">
+            <!-- Vision Card -->
+            <div class="vm-card gold-border">
+                <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                <h3>Vision</h3>
+                <p>Investing in people as the primary pillar of development, fostering a culture of creativity and innovation to build a sustainable future, while bridging public and private sectors to achieve high-quality investments for a better tomorrow.</p>
+            </div>
+
+            <!-- Mission Card -->
+            <div class="vm-card blue-border">
+                <div class="vm-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Mission</h3>
+                <p>Establishing our position as a leading company in local and international investment fields by developing diverse industrial and developmental sectors, providing innovative solutions and high-quality products.</p>
+                <ul class="mission-points">
+                    <li>Building and strengthening international trade relations.</li>
+                    <li>Providing integrated solutions that meet client needs.</li>
+                    <li>Embedding sustainability principles in all group activities.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <div class="footer-column">
+                <h4>Media Center</h4>
+                <ul>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Photo & Video Library</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Fraud Alert</a></li>
+                    <li><a href="privacy-en.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore Al Kaaser</h4>
+                <ul>
+                    <li><a href="about-en.html">About the Group</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><a href="sustainability-en.html">Sustainability & Transformation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column brand-info-col">
+                <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>Al Kaaser Holding Company</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Abu Dhabi, United Arab Emirates</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 Al Kaaser Holding. All Rights Reserved.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Language Switcher Icon -->
+    <a href="about.html" class="lang-float-btn" title="Switch to Arabic">
+        <i class="fas fa-language"></i>
+        <span>AR</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

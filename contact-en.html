@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Al Kaaser Holding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <!-- Brand & Logo (Left side in English) -->
+            <div class="brand" onclick="location.href='index-en.html'" style="cursor:pointer">
+                <img src="images/logo.png" alt="Al Kaaser Holding" class="main-logo">
+                <div class="brand-text-container" style="border-right: none; border-left: 2px solid #ddd; padding-right: 0; padding-left: 15px;">
+                    <span class="company-name">Al Kaaser Holding</span>
+                    <span class="company-sub">AL KAASER HOLDING</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="leadership-en.html">Board</a></li>
+                    <li><a href="contact-en.html" style="color: var(--accent);">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title (Hero) -->
+    <section class="page-title-section contact-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index-en.html">Home</a> / <span>Contact Us</span>
+            </nav>
+            <h1>We Are Here to Serve You</h1>
+            <p>We are pleased to answer your inquiries and build promising investment partnerships.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+        <!-- Main Contact Card -->
+        <div class="contact-main-card reveal active">
+            <!-- Information Side (Blue) -->
+            <div class="contact-blue-side">
+                <h2>Contact Us</h2>
+                <p>We are here to answer your inquiries and build new and sustainable investment partnerships.</p>
+
+                <div class="contact-info-list">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="item-text">
+                            <span>Email Address</span>
+                            <a href="mailto:info@alkaaser.ae">info@alkaaser.ae</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="item-text">
+                            <span>Main Location</span>
+                            <p>Abu Dhabi, United Arab Emirates 🇦🇪</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="item-text">
+                            <span>Working Hours</span>
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Form Side (White) -->
+            <div class="contact-white-side">
+                <form class="kaaser-form" action="https://formspree.io/f/your-id" method="POST">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="full_name" placeholder="Enter your name here" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <select name="subject">
+                            <option>General Inquiry</option>
+                            <option>Investment Opportunity</option>
+                            <option>Partnership Request</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <!-- Hidden field for target email -->
+                    <input type="hidden" name="_to" value="info@alkaaser.ae">
+
+                    <button type="submit" class="btn-submit-gold">Send Request Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid-wrap">
+            <!-- Media Center -->
+            <div class="footer-column">
+                <h4>Media Center</h4>
+                <ul>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Photo & Video Library</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Fraud Alert</a></li>
+                    <li><a href="privacy-en.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Explore Al Kaaser -->
+            <div class="footer-column">
+                <h4>Explore Al Kaaser</h4>
+                <ul>
+                    <li><a href="about-en.html">About the Group</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
+                    <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><a href="sustainability-en.html">Sustainability</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Info -->
+            <div class="footer-column brand-info-col">
+                <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
+                <h3>Al Kaaser Holding Company</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@alkaaser.ae</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Abu Dhabi, United Arab Emirates</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container flex-between mobile-column">
+                <p>© 2024 Al Kaaser Holding. All Rights Reserved.</p>
+                <div class="social-icons-wrap">
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Language Switcher Icon -->
+    <a href="contact.html" class="lang-float-btn" title="Switch to Arabic">
+        <i class="fas fa-language"></i>
+        <span>AR</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
