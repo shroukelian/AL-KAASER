@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Confirm immediate content visibility for testing */
         .reveal {
             opacity: 1 !important;
             transform: translateY(0) !important;
@@ -20,7 +19,6 @@
 <body>
     <header class="main-header">
         <div class="container nav-wrap">
-            <!-- 1. Logo and Name (Left in LTR) -->
             <div class="brand" onclick="location.href='index-en.html'" style="cursor: pointer;">
                 <img src="images/logo.png" alt="Al Kaaser" class="main-logo">
                 <div class="brand-text-container">
@@ -29,12 +27,10 @@
                 </div>
             </div>
 
-            <!-- 2. Mobile Menu Toggle (Right in LTR) -->
             <div class="menu-toggle" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
 
-            <!-- 3. Desktop Navigation -->
             <nav class="main-nav">
                 <ul class="nav-menu">
                     <li><a href="index-en.html">Home</a></li>
@@ -46,7 +42,6 @@
         </div>
     </header>
 
-    <!-- Mobile Sidebar -->
     <div id="side-nav" class="mobile-sidebar">
         <div class="sidebar-header">
             <img src="images/logo.png" alt="Logo" width="50">
@@ -58,14 +53,12 @@
             <li><a href="history-en.html">Values & History</a></li>
             <li><a href="leadership-en.html">Board of Directors</a></li>
             <li><a href="sustainability-en.html">Sustainability</a></li>
-            <li><a href="invest-en.html">Invest With Us</a></li>
+            <!-- <li><a href="invest-en.html">Invest With Us</a></li> -->
         </ul>
     </div>
 
-    <!-- Menu Overlay -->
     <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
 
-    <!-- Page Hero Section -->
     <section class="page-title-section">
         <div class="container">
             <nav class="breadcrumb">
@@ -78,7 +71,6 @@
 
     <main class="container section-padding">
 
-        <!-- Vice Chairman Card -->
         <div class="leader-main-card">
             <div class="leader-img">
                 <img src="images/الرئيس.jpeg" alt="Vice Chairman">
@@ -91,13 +83,11 @@
             </div>
         </div>
 
-        <!-- Board Members Section Title -->
         <div class="section-title" style="margin-top: 80px; text-align: left;">
             <h2>Board Members</h2>
             <div style="width: 80px; height: 4px; background: var(--accent); margin-top: 10px;"></div>
         </div>
 
-        <!-- Leadership Grid -->
         <div class="leadership-grid">
             <div class="leader-card">
                 <div class="member-img">
@@ -133,7 +123,6 @@
 
     <footer class="main-footer">
         <div class="container footer-grid-wrap">
-            <!-- Column 1: Media Center -->
             <div class="footer-column">
                 <h4>Media Center</h4>
                 <ul>
@@ -142,7 +131,6 @@
                 </ul>
             </div>
 
-            <!-- Column 2: Quick Links -->
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
@@ -153,7 +141,6 @@
                 </ul>
             </div>
 
-            <!-- Column 3: Explore Al Kaaser -->
             <div class="footer-column">
                 <h4>Explore Al Kaaser</h4>
                 <ul>
@@ -164,7 +151,6 @@
                 </ul>
             </div>
 
-            <!-- Column 4: Brand Info -->
             <div class="footer-column brand-info-col">
                 <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
                 <h3>Al Kaaser Holding Company</h3>
@@ -189,10 +175,8 @@
         </div>
     </footer>
 
-    <!-- Script for mobile menu -->
     <script src="script.js"></script>
 
-    <!-- Language Switch Button -->
     <a href="leadership.html" class="lang-float-btn" title="التحويل للعربية">
         <i class="fas fa-language"></i>
         <span>AR</span>

@@ -12,28 +12,51 @@
 
 <body class="bg-light">
 
-    <!-- Unified Header -->
-    <header class="main-header">
+       <header class="main-header">
         <div class="container nav-wrap">
-            <div class="brand" onclick="location.href='index-en.html'" style="cursor:pointer">
-                <img src="images/logo.png" alt="Al Kaaser Holding" class="main-logo">
+            <div class="brand" onclick="location.href='index-en.html'" style="cursor: pointer;">
+                <img src="images/logo.png" alt="Al Kaaser" class="main-logo">
                 <div class="brand-text-container">
                     <span class="company-name">Al Kaaser Holding</span>
                     <span class="company-sub">AL KAASER HOLDING</span>
                 </div>
             </div>
+
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <nav class="main-nav">
                 <ul class="nav-menu">
                     <li><a href="index-en.html">Home</a></li>
-                    <li><a href="about-en.html">About the Group</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="history-en.html">Values & History</a></li>
                     <li><a href="leadership-en.html">Board of Directors</a></li>
+                    <li><a href="sustainability-en.html">Sustainability</a></li>
                     <li><a href="contact-en.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Page Title Section -->
+    <!-- Mobile Sidebar -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html">About Us</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
+            <li><a href="history-en.html">Values & History</a></li>
+            <li><a href="leadership-en.html">Board of Directors</a></li>
+            <!-- <li><a href="invest-en.html">Invest With Us</a></li> -->
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+
     <section class="page-title-section privacy-hero">
         <div class="container">
             <nav class="breadcrumb">

@@ -12,28 +12,51 @@
 
 <body class="bg-light">
 
-    <!-- الهيدر الموحد -->
-    <header class="main-header">
+      <header class="main-header">
         <div class="container nav-wrap">
-            <div class="brand" onclick="location.href='index.html'" style="cursor:pointer">
-                <img src="images/logo.png" alt="الكاسر القابضة" class="main-logo">
+            <div class="brand" onclick="location.reload()">
+                <img src="images/logo.png" alt="الكاسر" class="main-logo">
                 <div class="brand-text-container">
                     <span class="company-name">الكاسر القابضة</span>
                     <span class="company-sub">AL KAASER HOLDING</span>
                 </div>
             </div>
+
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <nav class="main-nav">
                 <ul class="nav-menu">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="about.html">الكاسر القابضة</a></li>
+
+                    <li><a href="history.html">قيمنا وتاريخنا</a></li>
+
                     <li><a href="leadership.html">مجلس الإدارة</a></li>
-                    <li><a href="contact.html" style="color: var(--accent);">تواصل معنا</a></li>
+                    <li><a href="sustainability.html">الاستدامة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- عنوان الصفحة (Hero) -->
+    <div id="side-nav" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" width="50">
+            <i class="fas fa-times" onclick="toggleMobileMenu()"></i>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">الكاسر القابضة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="history.html">قيمنا وتاريخنا</a></li>
+            <li><a href="leadership.html">مجلس الإدارة</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="menu-overlay" onclick="toggleMobileMenu()"></div>
+
+
     <section class="page-title-section contact-hero">
         <div class="container">
             <nav class="breadcrumb">
@@ -45,9 +68,7 @@
     </section>
 
     <main class="container section-padding">
-        <!-- الكرت الرئيسي للتواصل (كما في الصورة المرفقة) -->
         <div class="contact-main-card reveal active">
-            <!-- الجزء الأزرق: معلومات التواصل -->
             <div class="contact-blue-side">
                 <h2>تواصل معنا</h2>
                 <p>نحن هنا للرد على استفساراتكم وبناء شراكات استثمارية جديدة ومستدامة.</p>
@@ -83,7 +104,6 @@
                 </div>
             </div>
 
-            <!-- الجزء الأبيض: نموذج المراسلة -->
             <div class="contact-white-side">
                 <form class="kaaser-form" action="https://formspree.io/f/your-id" method="POST">
                     <div class="input-group">
@@ -107,7 +127,6 @@
                         <label>رسالتك</label>
                         <textarea name="message" placeholder="كيف يمكننا مساعدتك؟" required></textarea>
                     </div>
-                    <!-- حقل مخفي للتأكيد على الإيميل المستهدف (في حال استخدام خدمات معينة) -->
                     <input type="hidden" name="_to" value="info@alkaaser.ae">
 
                     <button type="submit" class="btn-submit-gold">إرسال الطلب الآن</button>
@@ -118,7 +137,6 @@
 
     <footer class="main-footer">
         <div class="container footer-grid-wrap">
-            <!-- العمود الأول: المركز الإعلامي -->
             <div class="footer-column">
                 <h4>المركز الإعلامي</h4>
                 <ul>
@@ -127,7 +145,6 @@
                 </ul>
             </div>
 
-            <!-- العمود الثاني: روابط سريعة -->
             <div class="footer-column">
                 <h4>روابط سريعة</h4>
                 <ul>
@@ -138,7 +155,6 @@
                 </ul>
             </div>
 
-            <!-- العمود الثالث: استكشف الكاسر -->
             <div class="footer-column">
                 <h4>استكشف الكاسر</h4>
                 <ul>
@@ -149,7 +165,6 @@
                 </ul>
             </div>
 
-            <!-- العمود الرابع: معلومات الشركة واللوجو -->
             <div class="footer-column brand-info-col">
                 <img src="images/logo.png" alt="Al Kaaser Logo" class="footer-logo">
                 <h3>شركة الكاسر القابضة</h3>

@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // --- 1. تشغيل السلايدر (Hero Slider) ---
     let currentSlideIndex = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
 
     function showSlides() {
-        if (slides.length === 0) return; // تأمين الكود لو مفيش سلايدر
+        if (slides.length === 0) return; 
 
         slides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     showSlides();
 
-    // --- 2. أنيميشن الظهور عند السكرول (Reveal) ---
     const revealElements = () => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -37,12 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     revealElements();
 
-    // --- 3. إصلاح السموث سكرول (منع الأيرور الأحمر) ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             
-            // لو اللينك # بس أو فاضي، اخرج عشان ميعملش Error
             if (href === "#" || href === "") return;
 
             const target = document.querySelector(href);
@@ -53,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- 4. التعامل مع لينكات الإيميل ---
     document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -63,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// --- 5. وظيفة المنيو للموبايل ---
 function toggleMobileMenu() {
     const sideNav = document.getElementById('side-nav');
     const overlay = document.getElementById('overlay');
@@ -74,7 +68,6 @@ function toggleMobileMenu() {
     }
 }
 
-// --- 6. وظيفة تفاصيل منتجات الطاقة (Modal) ---
 function showProductDetails(id) {
     const product = energyProducts[id];
     const modal = document.getElementById('details-modal');
@@ -102,7 +95,6 @@ function closeProductDetails() {
     }
 }
 
-// بيانات منتجات الطاقة
 const energyProducts = {
     'oil': { title: 'تجارة النفط الخام', tag: 'قطاع التجارة الدولية', desc: 'نعمل كشريك موثوق في توريد النفط والغاز...' },
     'diesel': { title: 'تجارة الديزل', tag: 'باسيفيك للديزل', desc: 'متخصصون في توريد وقود الديزل بجودة عالية...' },

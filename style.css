@@ -2,9 +2,7 @@
 
 :root {
     --primary: #004685;
-    /* الكحلي المؤسسي */
     --accent: #d4af37;
-    /* الذهبي الملكي */
     --dark: #0c0c0c;
     --gray-bg: #f8f9fb;
     --white: #ffffff;
@@ -36,7 +34,6 @@ body {
     align-items: center;
 }
 
-/* --- 1. الشريط العلوي (Top Bar) --- */
 .top-bar {
     background: #f4f4f4;
     padding: 10px 0;
@@ -60,7 +57,6 @@ body {
     color: var(--primary);
 }
 
-/* --- 2. الهيدر (لوجو يمين / منيو يسار) --- */
 .main-header {
     background: #fff;
     padding: 10px 0;
@@ -73,7 +69,6 @@ body {
 .nav-wrap {
     display: flex;
     justify-content: space-between;
-    /* يوزع اللوجو يمين والمنيو يسار */
     align-items: center;
 }
 
@@ -86,7 +81,6 @@ body {
 
 .main-logo {
     height: 80px;
-    /* تكبير اللوجو */
     width: auto;
     object-fit: contain;
 }
@@ -112,7 +106,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* المنيو في أقصى اليسار */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -132,7 +125,6 @@ body {
     color: var(--primary);
 }
 
-/* --- 3. قسم الهيرو (موسطن الكلام تماماً) --- */
 .hero {
     height: 85vh;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
@@ -140,10 +132,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* توسيط الحاوية أفقياً */
     color: white;
     text-align: center;
-    /* توسيط النصوص داخل الحاوية */
 }
 
 .hero-content {
@@ -179,12 +169,10 @@ body {
     margin-right: auto;
 }
 
-/* توسيط الأزرار */
 .hero-actions {
     display: flex;
     gap: 20px;
     justify-content: center;
-    /* توسيط الأزرار */
 }
 
 .btn-primary {
@@ -220,7 +208,6 @@ body {
     color: var(--primary);
 }
 
-/* --- 4. الأقسام الأخرى --- */
 .section-padding {
     padding: 100px 0;
 }
@@ -247,7 +234,6 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* --- 5. الميجا منيو --- */
 .has-mega {
     position: static;
 }
@@ -297,7 +283,6 @@ body {
     padding-right: 5px;
 }
 
-/* --- 6. الفوتر --- */
 .footer {
     background: #0c0c0c;
     color: #fff;
@@ -317,14 +302,13 @@ body {
     color: #555;
 }
 
-/* --- تنسيق سكشن من نحن (Vision) --- */
 .section-padding {
     padding: 80px 0;
 }
 
 .vision-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* تقسيم الصفحة لنصفين */
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
 }
@@ -375,7 +359,6 @@ body {
     gap: 10px;
 }
 
-/* --- تنسيق سكشن الاستدامة (Sustainability) --- */
 .sustainability-section {
     background-color: #f4f7f9;
     padding: 100px 0;
@@ -408,7 +391,7 @@ body {
     background: #ffffff;
     border-radius: 30px;
     padding: 60px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
 .eco-card-content {
@@ -443,26 +426,30 @@ body {
     line-height: 1.8;
 }
 
-/* للتوافق مع الموبايل */
 @media (max-width: 992px) {
-    .vision-grid, .eco-card-content {
+
+    .vision-grid,
+    .eco-card-content {
         grid-template-columns: 1fr;
         flex-direction: column;
         text-align: center;
     }
-    .vision-text, .section-header-right {
+
+    .vision-text,
+    .section-header-right {
         text-align: center;
     }
+
     .section-header-right h2::after {
         right: 50%;
         transform: translateX(50%);
     }
+
     .eco-icon-box {
         margin: 0 auto;
     }
 }
 
-/* --- تنسيق قطاعات الأعمال (Sectors) --- */
 .line-center {
     width: 80px;
     height: 4px;
@@ -517,14 +504,14 @@ body {
 }
 
 .sector-card li::before {
-    content: '\f0da'; /* سهم صغير */
+    content: '\f0da';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     position: absolute;
     right: 0;
     color: var(--accent);
 }
-/* --- سكشن التكنولوجيا (Innovation) --- */
+
 .tech-section {
     background: var(--dark-navy);
     padding: 80px 0;
@@ -538,14 +525,21 @@ body {
     gap: 60px;
 }
 
-.tech-visual { flex: 1; }
+.tech-visual {
+    flex: 1;
+}
+
 .tech-visual img {
     width: 100%;
     border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.tech-content { flex: 1; text-align: right; }
+.tech-content {
+    flex: 1;
+    text-align: right;
+}
+
 .tech-content h2 {
     font-size: 42px;
     font-weight: 900;
@@ -560,7 +554,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* --- سكشن تواصل معنا (Contact) --- */
 .contact-main-card {
     display: flex;
     background: #fff;
@@ -581,8 +574,17 @@ body {
     justify-content: center;
 }
 
-.contact-blue-side h2 { font-size: 35px; font-weight: 900; margin-bottom: 20px; }
-.contact-blue-side p { font-size: 17px; opacity: 0.8; margin-bottom: 40px; }
+.contact-blue-side h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contact-blue-side p {
+    font-size: 17px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
 
 .contact-info-list .info-item {
     display: flex;
@@ -591,7 +593,11 @@ body {
     margin-bottom: 25px;
     font-size: 16px;
 }
-.contact-info-list i { color: var(--accent); font-size: 20px; }
+
+.contact-info-list i {
+    color: var(--accent);
+    font-size: 20px;
+}
 
 .contact-white-side {
     flex: 1.5;
@@ -610,7 +616,7 @@ body {
     color: var(--dark-navy);
 }
 
-.kaaser-form input, 
+.kaaser-form input,
 .kaaser-form textarea {
     width: 100%;
     padding: 15px;
@@ -621,9 +627,11 @@ body {
     font-size: 15px;
 }
 
-.kaaser-form textarea { height: 120px; resize: none; }
+.kaaser-form textarea {
+    height: 120px;
+    resize: none;
+}
 
-/* زر الإرسال المطور */
 .btn-submit-gold {
     width: 100%;
     background: var(--accent);
@@ -643,20 +651,22 @@ body {
     transform: translateY(-3px);
 }
 
-/* التجاوب مع الموبايل */
 @media (max-width: 992px) {
-    .tech-wrapper, .contact-main-card {
+
+    .tech-wrapper,
+    .contact-main-card {
         flex-direction: column;
     }
-    .contact-blue-side, .contact-white-side {
+
+    .contact-blue-side,
+    .contact-white-side {
         padding: 40px 20px;
     }
 }
 
 
-/* --- إصلاح سكشن الابتكار --- */
 .tech-section {
-    background-color: #071e3d !important; /* الكحلي الغامق جداً */
+    background-color: #071e3d !important;
     padding: 100px 0;
     color: white;
     overflow: hidden;
@@ -667,7 +677,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    flex-direction: row-reverse; /* لضمان الصورة يسار والكلام يمين */
+    flex-direction: row-reverse;
 }
 
 .tech-content {
@@ -676,9 +686,8 @@ body {
     z-index: 2;
 }
 
-/* العنوان اللي مكنش ظاهر */
 .tech-content h2 {
-    color: #ffffff !important; /* أبيض صريح */
+    color: #ffffff !important;
     font-size: 45px;
     font-weight: 900;
     line-height: 1.2;
@@ -699,30 +708,34 @@ body {
 .tech-visual img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
-/* --- إصلاح كارت التواصل --- */
+
 .contact-main-card {
-    display: flex !important; /* إجبار التقسيم لعمودين */
+    display: flex !important;
     background: #ffffff;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
     border: 1px solid #eee;
     width: 100%;
 }
 
-/* النص الأزرق (المعلومات) */
 .contact-blue-side {
     flex: 1;
-    background-color: #004685 !important; /* أزرق أدنوك */
+    background-color: #004685 !important;
     color: white;
     padding: 60px 40px;
     text-align: right;
 }
 
-.contact-blue-side h2 { font-size: 32px; font-weight: 800; margin-bottom: 20px; color: #fff; }
+.contact-blue-side h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
 .info-item {
     display: flex;
@@ -732,11 +745,10 @@ body {
 }
 
 .info-item i {
-    color: #d4af37; /* اللون الذهبي للأيقونات */
+    color: #d4af37;
     font-size: 22px;
 }
 
-/* النص الأبيض (الفورم) */
 .contact-white-side {
     flex: 1.5;
     padding: 60px 40px;
@@ -749,7 +761,8 @@ body {
     gap: 20px;
 }
 
-.kaaser-form input, .kaaser-form textarea {
+.kaaser-form input,
+.kaaser-form textarea {
     width: 100%;
     padding: 15px;
     border: 1px solid #e0e6ed;
@@ -769,24 +782,31 @@ body {
     transition: 0.3s;
 }
 
-.btn-submit-gold:hover { background: #071e3d; color: #fff; }
-
-/* للموبايل */
-@media (max-width: 768px) {
-    .tech-wrapper, .contact-main-card {
-        flex-direction: column !important;
-    }
-    .contact-blue-side, .contact-white-side { width: 100%; padding: 30px 20px; }
+.btn-submit-gold:hover {
+    background: #071e3d;
+    color: #fff;
 }
 
-/* --- سكشن أرقام أدنوك (ADNOC Power Numbers) --- */
+@media (max-width: 768px) {
+
+    .tech-wrapper,
+    .contact-main-card {
+        flex-direction: column !important;
+    }
+
+    .contact-blue-side,
+    .contact-white-side {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
 .adnoc-stats-section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* صورة خلفية فخمة (يفضل صورة إماراتية واضحة) */
-    background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1920&q=80'); 
-    background-attachment: fixed; /* تثبيت الخلفية */
+    background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
 }
 
 .fixed-gradient-overlay {
@@ -814,11 +834,10 @@ body {
 
 .adnoc-stats-info p {
     font-size: 20px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     max-width: 500px;
 }
 
-/* تصميم الكروت الرقمية */
 .adnoc-numbers-list {
     display: flex;
     flex-direction: column;
@@ -827,7 +846,7 @@ body {
 
 .adnoc-stat-card {
     display: flex;
-    justify-content: flex-end; /* لتركيز الأرقام في جهة واحدة */
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
     color: white;
@@ -835,7 +854,7 @@ body {
 }
 
 .big-num {
-    font-size: 110px; /* حجم ضخم جداً مثل أدنوك */
+    font-size: 110px;
     font-weight: 900;
     line-height: 0.8;
     display: block;
@@ -851,42 +870,58 @@ body {
 
 .stat-desc {
     font-size: 16px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
-/* الأيقونات الخطية (الجهة اليمنى تماماً) */
 .adnoc-icon-box {
     font-size: 70px;
-    color: var(--accent); /* الذهبي */
-    border-right: 2px solid rgba(255,255,255,0.2);
+    color: var(--accent);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
     padding-right: 30px;
     width: 120px;
     display: flex;
     justify-content: center;
 }
 
-/* للموبايل */
 @media (max-width: 992px) {
-    .adnoc-grid { grid-template-columns: 1fr; gap: 50px; }
-    .adnoc-stats-section { background-attachment: scroll; }
-    .big-num { font-size: 70px; }
-    .adnoc-stat-card { justify-content: center; text-align: center; flex-direction: column-reverse; }
-    .adnoc-icon-box { border-right: none; padding-right: 0; border-bottom: 2px solid var(--accent); padding-bottom: 20px; }
+    .adnoc-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .adnoc-stats-section {
+        background-attachment: scroll;
+    }
+
+    .big-num {
+        font-size: 70px;
+    }
+
+    .adnoc-stat-card {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .adnoc-icon-box {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 20px;
+    }
 }
 
-/* --- الفوتر المطور (ADNOC Style) --- */
 .main-footer {
-    /* تدرج لوني فخم من الكحلي للأزرق الفاتح كما في الصورة */
     background: linear-gradient(to left, #004685 0%, #008eb7 100%);
     color: white;
     padding-top: 80px;
     position: relative;
-    border-top: 5px solid var(--accent); /* الخط الذهبي العلوي */
+    border-top: 5px solid var(--accent);
 }
 
 .footer-grid-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr; /* تقسيم الأعمدة */
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
     gap: 40px;
     padding-bottom: 60px;
 }
@@ -915,10 +950,9 @@ body {
 
 .footer-column ul li a:hover {
     color: var(--accent);
-    padding-right: 5px; /* حركة بسيطة عند الهوفر */
+    padding-right: 5px;
 }
 
-/* عمود البراند */
 .brand-info-col {
     text-align: right;
 }
@@ -939,9 +973,8 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* الشريط السفلي */
 .footer-bottom-bar {
-    background: rgba(0, 0, 0, 0.15); /* تظليل خفيف للشريط السفلي */
+    background: rgba(0, 0, 0, 0.15);
     padding: 30px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -951,7 +984,6 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* أيقونات السوشيال ميديا الدائرية */
 .social-icons-wrap {
     display: flex;
     gap: 12px;
@@ -978,7 +1010,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* التجاوب مع الموبايل */
 @media (max-width: 992px) {
     .footer-grid-wrap {
         grid-template-columns: 1fr 1fr;
@@ -990,17 +1021,18 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
     .brand-info-col {
         text-align: center;
-        order: -1; /* اللوجو يظهر أولاً في الموبايل */
+        order: -1;
     }
+
     .mobile-column {
         flex-direction: column-reverse;
         gap: 20px;
     }
 }
 
-/* --- Hero Slider Container --- */
 .hero-slider {
     position: relative;
     height: 100vh;
@@ -1016,7 +1048,7 @@ body {
     transition: opacity 1.2s ease-in-out, transform 1.2s ease;
     background-size: cover;
     background-position: center;
-    transform: scale(1.1); /* تأثير زووم خفيف */
+    transform: scale(1.1);
 }
 
 .slide.active {
@@ -1033,18 +1065,23 @@ body {
     align-items: center;
 }
 
-/* --- Hero Content --- */
 .hero-content {
     max-width: 800px;
     animation: fadeInUp 1s ease forwards;
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* --- البطاقة العائمة (The ADNOC Look) --- */
 .hero-context-card {
     position: absolute;
     bottom: 80px;
@@ -1088,7 +1125,6 @@ body {
     opacity: 0.8;
 }
 
-/* --- نقاط التنقل --- */
 .slider-indicators {
     position: absolute;
     bottom: 30px;
@@ -1102,7 +1138,7 @@ body {
 .dot {
     width: 40px;
     height: 3px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -1116,30 +1152,79 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
 
 :root {
-    --primary: #004685; /* الكحلي */
-    --accent: #d4af37;  /* الذهبي */
+    --primary: #004685;
+    --accent: #d4af37;
     --white: #ffffff;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Cairo', sans-serif; direction: rtl; }
-
-/* --- الهيدر الاحترافي --- */
-.main-header { 
-    background: #fff; padding: 10px 0; position: sticky; top: 0; z-index: 1000; 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.nav-wrap { display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto; }
-.brand { display: flex; align-items: center; gap: 15px; }
-.main-logo { height: 75px; }
-.company-name { font-size: 22px; font-weight: 900; color: var(--primary); display: block; }
-.company-sub { font-size: 10px; font-weight: 700; color: var(--accent); }
 
-.nav-menu { display: flex; list-style: none; gap: 30px; }
-.nav-menu a { text-decoration: none; color: #333; font-weight: 700; font-size: 15px; }
-.nav-menu a:hover { color: var(--primary); }
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
 
-/* --- سكشن الهيرو (تظبيط الرؤية) --- */
+.main-header {
+    background: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-logo {
+    height: 75px;
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--primary);
+    display: block;
+}
+
+.company-sub {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
 .hero-slider {
     position: relative;
     height: 85vh;
@@ -1149,19 +1234,24 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 
 .slide {
     position: absolute;
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0;
     transition: 1s ease-in-out;
 }
 
-.slide.active { opacity: 1; }
+.slide.active {
+    opacity: 1;
+}
 
 .hero-overlay {
     background: linear-gradient(to left, rgba(7, 30, 61, 0.8) 0%, rgba(7, 30, 61, 0.3) 100%);
-    width: 100%; height: 100%;
-    display: flex; align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -1189,8 +1279,11 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin-bottom: 20px;
 }
 
-/* --- ضبط الأزرار (أدنوك ستايل) --- */
-.hero-actions { display: flex; gap: 15px; margin-top: 30px; }
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
 
 .btn-gold-pro {
     background: var(--accent) !important;
@@ -1216,10 +1309,16 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     transition: 0.3s;
 }
 
-.btn-gold-pro:hover { background: #fff !important; transform: translateY(-3px); }
-.btn-outline-pro:hover { background: #fff !important; color: var(--primary) !important; }
+.btn-gold-pro:hover {
+    background: #fff !important;
+    transform: translateY(-3px);
+}
 
-/* --- البطاقة الجانبية العائمة --- */
+.btn-outline-pro:hover {
+    background: #fff !important;
+    color: var(--primary) !important;
+}
+
 .hero-context-card {
     position: absolute;
     bottom: 50px;
@@ -1234,12 +1333,28 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     z-index: 10;
 }
 
-.context-img img { width: 70px; height: 50px; object-fit: cover; border-radius: 4px; }
-.context-text { padding-right: 15px; text-align: right; }
-.context-text h4 { font-size: 14px; font-weight: 800; }
-.context-text p { font-size: 11px; opacity: 0.7; }
+.context-img img {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
 
-/* نقاط التنقل */
+.context-text {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.context-text h4 {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.context-text p {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
 .slider-indicators {
     position: absolute;
     bottom: 20px;
@@ -1249,10 +1364,19 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     gap: 10px;
     z-index: 10;
 }
-.dot { width: 30px; height: 3px; background: rgba(255,255,255,0.3); cursor: pointer; }
-.dot.active { background: var(--accent); width: 50px; }
 
-/* --- ضبط سكشن الهيرو سلايدر --- */
+.dot {
+    width: 30px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--accent);
+    width: 50px;
+}
+
 .hero-slider {
     position: relative;
     height: 85vh;
@@ -1271,19 +1395,33 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     z-index: 1;
 }
 
-.slide.active { opacity: 1; z-index: 2; }
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
 
 .hero-overlay {
     background: linear-gradient(to left, rgba(7, 30, 61, 0.85) 0%, rgba(7, 30, 61, 0.3) 100%);
-    width: 100%; height: 100%;
-    display: flex; align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.hero-content { text-align: right; color: white; max-width: 800px; padding-right: 5%; }
+.hero-content {
+    text-align: right;
+    color: white;
+    max-width: 800px;
+    padding-right: 5%;
+}
 
-.hero-content h1 { font-size: clamp(35px, 5vw, 65px); font-weight: 900; line-height: 1.1; margin-bottom: 25px; }
+.hero-content h1 {
+    font-size: clamp(35px, 5vw, 65px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
 
-/* --- ضبط الأزرار لتكون بيضاوية وفخمة --- */
 .hero-actions {
     display: flex;
     gap: 20px;
@@ -1298,7 +1436,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     padding: 14px 45px !important;
     font-weight: 900;
     font-size: 17px;
-    border-radius: 50px !important; /* شكل بيضاوي */
+    border-radius: 50px !important;
     cursor: pointer;
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
@@ -1318,7 +1456,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     padding: 14px 45px !important;
     font-weight: 700;
     font-size: 17px;
-    border-radius: 50px !important; /* شكل بيضاوي */
+    border-radius: 50px !important;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
@@ -1331,7 +1469,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     transform: translateY(-3px);
 }
 
-/* --- البطاقة الجانبية العائمة --- */
 .hero-context-card {
     position: absolute;
     bottom: 50px;
@@ -1344,10 +1481,9 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: white;
     border-right: 4px solid var(--accent);
     z-index: 10;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* --- نقاط السلايدر --- */
 .slider-indicators {
     position: absolute;
     bottom: 30px;
@@ -1361,7 +1497,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 .dot {
     width: 35px;
     height: 4px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 2px;
     cursor: pointer;
     transition: 0.4s;
@@ -1373,9 +1509,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 
-/* --- قواعد الأنيميشن (Animations Rules) --- */
 
-/* 1. الحالة المبدئية للعنصر (مخفي ومزاح للأسفل قليلاً) */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -1383,170 +1517,353 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     will-change: opacity, transform;
 }
 
-/* 2. الحالة عند الظهور (يصبح مرئياً وفي مكانه الطبيعي) */
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* تأثيرات إضافية للجهات المختلفة */
-.reveal-left { transform: translateX(-50px); opacity: 0; transition: all 0.8s ease; }
-.reveal-right { transform: translateX(50px); opacity: 0; transition: all 0.8s ease; }
+.reveal-left {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
 
-.reveal-left.active, .reveal-right.active {
+.reveal-right {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.reveal-left.active,
+.reveal-right.active {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* تأخير زمني بسيط لتسلسل ظهور الكروت (Stagger Effect) */
-.delay-1 { transition-delay: 0.2s; }
-.delay-2 { transition-delay: 0.4s; }
-.delay-3 { transition-delay: 0.6s; }
+.delay-1 {
+    transition-delay: 0.2s;
+}
 
-/* تأثير تحويم (Hover) إضافي للقطاعات */
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
 .sector-card {
     transition: transform 0.4s ease, box-shadow 0.4s ease !important;
 }
+
 .sector-card:hover {
     transform: translateY(-15px) scale(1.02) !important;
     box-shadow: 0 20px 40px rgba(0, 70, 133, 0.15) !important;
 }
 
-/* نبض خفيف للأيقونات الذهبية */
-.eco-icon i, .adnoc-icon-box i {
+.eco-icon i,
+.adnoc-icon-box i {
     animation: pulse-gold 3s infinite ease-in-out;
 }
 
 @keyframes pulse-gold {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); opacity: 0.8; }
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
 
-/* =========================================
-   تنسيق الموبايل الاحترافي (Responsive Design)
-   ========================================= */
+
 
 @media (max-width: 768px) {
-    .container { width: 92%; }
+    .container {
+        width: 92%;
+    }
 
-    /* 1. الهيدر: إخفاء المنيو الطويلة وإظهار اللوجو فقط */
-    .top-bar { display: none; } /* توفير مساحة */
-    .main-header { padding: 10px 0; }
-    .nav-menu { display: none; } /* المنيو في الموبايل تحتاج زرار (هيدن حالياً) */
-    .main-logo { height: 50px; }
-    .company-name { font-size: 16px; }
-    .company-sub { font-size: 8px; }
+    .top-bar {
+        display: none;
+    }
 
-    /* 2. سكشن الهيرو (البداية) */
-    .hero { height: auto; padding: 100px 0 50px; text-align: center; }
-    .hero-overlay { background: rgba(7, 30, 61, 0.7); }
-    .hero-content { padding: 0 10px; }
-    .hero h1 { font-size: 32px !important; line-height: 1.3; }
-    .hero p { font-size: 16px; margin-bottom: 30px; }
-    .hero-actions { flex-direction: column; gap: 15px; width: 100%; }
-    .btn-gold-pro, .btn-outline-pro { width: 100%; padding: 15px; margin: 0 !important; }
+    .main-header {
+        padding: 10px 0;
+    }
 
-    /* البطاقة العائمة (تنزيلها تحت السلايدر) */
+    .nav-menu {
+        display: none;
+    }
+
+    .main-logo {
+        height: 50px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .company-sub {
+        font-size: 8px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 0 50px;
+        text-align: center;
+    }
+
+    .hero-overlay {
+        background: rgba(7, 30, 61, 0.7);
+    }
+
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px !important;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .btn-gold-pro,
+    .btn-outline-pro {
+        width: 100%;
+        padding: 15px;
+        margin: 0 !important;
+    }
+
     .hero-context-card {
-        position: relative; bottom: 0; left: 0; width: 100%;
-        margin-top: 30px; background: rgba(255,255,255,0.1);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 15px;
     }
 
-    /* 3. سكشن "من نحن" (ترتيب راسي) */
-    .vision-layout { grid-template-columns: 1fr; gap: 30px; text-align: center; }
-    .vision-text h2 { font-size: 28px; }
-    .vision-image img { height: 250px; }
+    .vision-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
 
-    /* 4. سكشن الاستدامة */
-    .eco-card { flex-direction: column; text-align: center; padding: 30px 20px; gap: 20px; }
-    .eco-icon { font-size: 60px; }
-    .eco-text-box h3 { font-size: 22px; }
+    .vision-text h2 {
+        font-size: 28px;
+    }
 
-    /* 5. سكشن أرقام القوة (أهم تعديل) */
-    .adnoc-grid { grid-template-columns: 1fr; gap: 40px; }
-    .adnoc-stats-section { background-attachment: scroll; min-height: auto; }
-    .adnoc-stats-info { text-align: center; }
-    .adnoc-stats-info h2 { font-size: 30px; }
-    
-    .adnoc-stat-card { flex-direction: column-reverse; gap: 15px; text-align: center; justify-content: center; }
-    .big-num { font-size: 60px !important; } /* تصغير الرقم الضخم */
-    .stat-title { font-size: 20px; }
-    .adnoc-icon-box { border-right: none; border-bottom: 2px solid var(--accent); padding: 0 0 15px 0; width: 60px; margin: 0 auto; }
+    .vision-image img {
+        height: 250px;
+    }
 
-    /* 6. سكشن القطاعات (الـ 15 شركة) */
-    .sectors-grid { grid-template-columns: 1fr; }
-    .sector-card { padding: 25px; }
+    .eco-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
 
-    /* 7. سكشن التكنولوجيا (Innovation) */
-    .tech-wrapper { flex-direction: column-reverse; gap: 30px; text-align: center; }
-    .tech-content h2 { font-size: 28px; }
+    .eco-icon {
+        font-size: 60px;
+    }
 
-    /* 8. سكشن التواصل */
-    .contact-main-card { flex-direction: column; }
-    .contact-blue-side, .contact-white-side { padding: 40px 20px; width: 100%; }
-    .contact-blue-side h2 { font-size: 26px; }
+    .eco-text-box h3 {
+        font-size: 22px;
+    }
 
-    /* 9. الفوتر */
-    .footer-grid-wrap { grid-template-columns: 1fr; text-align: center; gap: 40px; }
-    .brand-info-col { text-align: center; }
-    .social-icons-wrap { justify-content: center; }
-    .mobile-column { flex-direction: column-reverse; gap: 20px; text-align: center; }
+    .adnoc-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .adnoc-stats-section {
+        background-attachment: scroll;
+        min-height: auto;
+    }
+
+    .adnoc-stats-info {
+        text-align: center;
+    }
+
+    .adnoc-stats-info h2 {
+        font-size: 30px;
+    }
+
+    .adnoc-stat-card {
+        flex-direction: column-reverse;
+        gap: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .big-num {
+        font-size: 60px !important;
+    }
+
+    .stat-title {
+        font-size: 20px;
+    }
+
+    .adnoc-icon-box {
+        border-right: none;
+        border-bottom: 2px solid var(--accent);
+        padding: 0 0 15px 0;
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .sectors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-card {
+        padding: 25px;
+    }
+
+    .tech-wrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .tech-content h2 {
+        font-size: 28px;
+    }
+
+    .contact-main-card {
+        flex-direction: column;
+    }
+
+    .contact-blue-side,
+    .contact-white-side {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .contact-blue-side h2 {
+        font-size: 26px;
+    }
+
+    .footer-grid-wrap {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .brand-info-col {
+        text-align: center;
+    }
+
+    .social-icons-wrap {
+        justify-content: center;
+    }
+
+    .mobile-column {
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
-/* --- أيقونة المنيو للموبايل --- */
 .menu-toggle {
-    display: none; /* مخفية في الكمبيوتر */
+    display: none;
     font-size: 24px;
     color: var(--primary);
     cursor: pointer;
 }
 
-/* --- القائمة الجانبية --- */
 .mobile-sidebar {
     position: fixed;
     top: 0;
-    left: -100%; /* مخفية لليسار */
+    left: -100%;
     width: 280px;
     height: 100%;
     background: #fff;
     z-index: 2000;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 30px;
-    box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-sidebar.active { left: 0; }
+.mobile-sidebar.active {
+    left: 0;
+}
 
 .menu-overlay {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1999;
     display: none;
 }
 
-.menu-overlay.active { display: block; }
+.menu-overlay.active {
+    display: block;
+}
 
-.sidebar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
-.sidebar-links { list-style: none; }
-.sidebar-links li { margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
-.sidebar-links a { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 18px; }
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
-/* --- تعديلات الموبايل لضبط الصورة والكلام --- */
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    .main-nav { display: none; } /* إخفاء منيو الكمبيوتر */
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
 
     .hero {
-        height: 100vh !important; /* تقليل الطول في الموبايل لضبط التناسب */
-        background-attachment: scroll !important; /* إلغاء Fixed لأنه يسبب غبش في الموبايل */
-        background-position: 70% center !important; /* تركيز الصورة على البرج */
+        height: 100vh !important;
+        background-attachment: scroll !important;
+        background-position: 70% center !important;
     }
 
     .hero h1 {
-        font-size: 38px !important; /* تصغير الخط ليتناسب مع عرض الموبايل */
+        font-size: 38px !important;
         text-align: center;
     }
 
@@ -1561,46 +1878,43 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
         width: 100%;
     }
 
-    .btn-gold-pro, .btn-outline-pro {
+    .btn-gold-pro,
+    .btn-outline-pro {
         width: 100%;
         margin: 0 0 10px 0 !important;
         text-align: center;
     }
 
     .hero-context-card {
-        display: none; /* إخفاء البطاقة الصغيرة في الموبايل لتقليل الزحمة */
+        display: none;
     }
 }
 
 
 
-/* =========================================
-   تحسينات الموبايل (توسيط الأيقونات والزراير)
-   ========================================= */
+
 
 @media (max-width: 768px) {
-    /* 1. توسيط أيقونات ومحتوى قطاعات الأعمال (الـ 15 شركة) */
     .sector-card {
-        text-align: center !important; /* توسيط كل شيء داخل الكارت */
+        text-align: center !important;
         padding: 30px 20px !important;
     }
 
     .sector-icon {
-        margin: 0 auto 20px !important; /* توسيط الأيقونة في النص */
+        margin: 0 auto 20px !important;
         display: flex;
         justify-content: center;
     }
 
     .sector-card ul {
-        display: inline-block; /* لضمان توسيط القائمة */
-        text-align: right; /* بقاء أسماء الشركات من اليمين لكن القائمة نفسها متوسطة */
+        display: inline-block;
+        text-align: right;
         padding: 0;
         margin: 0 auto;
     }
 
-    /* 2. توسيط وتطوير سكشن الابتكار (التكنولوجيا) */
     .tech-content {
-        text-align: center !important; /* توسيط نصوص الذكاء الاصطناعي */
+        text-align: center !important;
     }
 
     .tech-content h2 {
@@ -1613,35 +1927,32 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
         background-color: #fff !important;
         transform: translateY(-3px);
     }
-    
-    /* توسيط البادج "المستقبل الآن" */
+
     .tech-content .hero-badge {
         margin: 0 auto 15px !important;
         display: inline-block;
     }
 }
 
-    /* 3. ضبط الزرار (اكتشف ديجيتال هاب) ليكون فخم */
-    .tech-content .btn-gold {
-        background-color: var(--accent) !important; /* اللون الذهبي */
-        color: #000 !important;
-        border: none !important;
-        padding: 15px 40px !important;
-        border-radius: 50px !important; /* شكل بيضاوي */
-        font-weight: 900 !important;
-        font-size: 16px !important;
-        box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
-        cursor: pointer;
-        display: inline-block;
-        width: 100%; /* ياخد عرض الشاشة في الموبايل لسهولة الضغط */
-        max-width: 280px;
-        margin: 20px auto 0 !important;
-        transition: 0.3s;
-    }
+.tech-content .btn-gold {
+    background-color: var(--accent) !important;
+    color: #000 !important;
+    border: none !important;
+    padding: 15px 40px !important;
+    border-radius: 50px !important;
+    font-weight: 900 !important;
+    font-size: 16px !important;
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0 !important;
+    transition: 0.3s;
+}
 
 
 
-    /* --- تنسيق قائمة المنتجات النفطية --- */
 .product-links {
     list-style: none;
     padding: 0;
@@ -1658,7 +1969,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 .product-links li::before {
-    content: '\f104'; /* سهم صغير */
+    content: '\f104';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     position: absolute;
@@ -1672,13 +1983,15 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     background: #f9f9f9;
 }
 
-/* --- تنسيق نافذة التفاصيل (Modal) --- */
 .modal-overlay-custom {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(7, 30, 61, 0.9);
     z-index: 5000;
-    display: none; /* مخفية في البداية */
+    display: none;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(8px);
@@ -1691,29 +2004,55 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     padding: 50px;
     border-radius: 20px;
     position: relative;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
     text-align: right;
     animation: modalFadeIn 0.4s ease;
 }
 
 @keyframes modalFadeIn {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .close-modal {
     position: absolute;
-    top: 20px; right: 20px;
+    top: 20px;
+    right: 20px;
     font-size: 35px;
     color: #999;
     cursor: pointer;
 }
 
-.modal-content-wrap h2 { color: var(--primary-blue); margin-bottom: 20px; font-weight: 800; }
-.modal-content-wrap p { font-size: 17px; color: #666; line-height: 1.8; }
-.modal-tag { background: var(--accent); color: #000; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+.modal-content-wrap h2 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
 
-/* --- تنسيق قسم من نحن (Profile) --- */
+.modal-content-wrap p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.modal-tag {
+    background: var(--accent);
+    color: #000;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
 .vision-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -1733,7 +2072,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     background: #f8f9fb;
     padding: 25px;
     border-radius: 15px;
-    border-right: 4px solid var(--accent); /* الخط الذهبي */
+    border-right: 4px solid var(--accent);
 }
 
 .mini-card h3 {
@@ -1751,7 +2090,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: #555 !important;
 }
 
-/* --- سكشن الأهداف (Goals Bar) --- */
 .goals-bar {
     display: flex;
     justify-content: space-around;
@@ -1775,7 +2113,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: var(--accent);
 }
 
-/* --- شبكة الشركات (Subsidiaries) --- */
 .companies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -1811,14 +2148,22 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin-left: 10px;
 }
 
-/* التوافق مع الموبايل */
 @media (max-width: 992px) {
-    .vision-grid { grid-template-columns: 1fr; }
-    .mission-mission-box { grid-template-columns: 1fr; }
-    .goals-bar { flex-direction: column; gap: 20px; text-align: center; }
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-mission-box {
+        grid-template-columns: 1fr;
+    }
+
+    .goals-bar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
-/* --- تنسيق صفحة مجلس الإدارة (Leadership) --- */
 
 .page-title-section {
     background-color: var(--primary);
@@ -1838,9 +2183,11 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     opacity: 0.8;
 }
 
-.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+}
 
-/* كارت القيادة الرئيسي */
 .leader-main-card {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -1890,7 +2237,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     line-height: 1.8;
 }
 
-/* شبكة الأعضاء */
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1910,7 +2256,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     width: 100%;
     height: 350px;
     object-fit: cover;
-    filter: grayscale(100%); /* تأثير فني: صور رمادية تتحول لملونة عند الهوفر */
+    filter: grayscale(100%);
     transition: 0.5s;
 }
 
@@ -1937,18 +2283,28 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 .leader-card:hover {
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
-    .leader-main-card { grid-template-columns: 1fr; }
-    .leader-img img { height: 350px; }
-    .leader-info { padding: 30px; text-align: center; }
-    .gold-line { margin: 0 auto 20px; }
+    .leader-main-card {
+        grid-template-columns: 1fr;
+    }
+
+    .leader-img img {
+        height: 350px;
+    }
+
+    .leader-info {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .gold-line {
+        margin: 0 auto 20px;
+    }
 }
 
-/* --- تنسيق النماذج المتطور --- */
 .invest-form-container {
     background: #fff;
     padding: 50px;
@@ -1958,16 +2314,40 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin: 0 auto;
 }
 
-.form-header { text-align: center; margin-bottom: 40px; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-
-.input-group label { display: block; font-weight: 700; margin-bottom: 10px; color: var(--primary); }
-.input-group input, .input-group select {
-    width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; font-family: inherit;
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-/* صناديق الرفع */
-.upload-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
 .upload-box {
     border: 2px dashed #ddd;
     padding: 30px;
@@ -1977,10 +2357,19 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     position: relative;
     cursor: pointer;
 }
-.upload-box:hover { border-color: var(--accent); background: #fffdf5; }
-.upload-box input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 
-/* زر الدفع */
+.upload-box:hover {
+    border-color: var(--accent);
+    background: #fffdf5;
+}
+
+.upload-box input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
 .btn-pay {
     width: 100%;
     background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
@@ -1992,9 +2381,13 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     font-weight: 900;
     cursor: pointer;
     margin-top: 30px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.btn-pay:hover { transform: scale(1.02); background: #000; }
+
+.btn-pay:hover {
+    transform: scale(1.02);
+    background: #000;
+}
 
 .payment-notice {
     background: #fff9e6;
@@ -2006,19 +2399,25 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 
-/* --- تنسيق صفحة الوظائف --- */
 .career-container {
     background: #fff;
     padding: 50px;
     border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
     max-width: 900px;
     margin: 0 auto;
     border: 1px solid #eee;
 }
 
-.form-intro { text-align: center; margin-bottom: 40px; }
-.form-intro h2 { color: var(--primary-blue); font-weight: 900; }
+.form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-intro h2 {
+    color: var(--primary-blue);
+    font-weight: 900;
+}
 
 .form-grid {
     display: grid;
@@ -2035,7 +2434,8 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     font-size: 14px;
 }
 
-.input-group input, .input-group select {
+.input-group input,
+.input-group select {
     width: 100%;
     padding: 15px;
     border: 1px solid #e2e8f0;
@@ -2044,7 +2444,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     font-family: inherit;
 }
 
-/* صندوق الرفع المطور (Modern Upload) */
 .modern-upload-box {
     border: 2px dashed #cbd5e0;
     padding: 40px;
@@ -2062,8 +2461,18 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     background: #fffdf5;
 }
 
-.modern-upload-box i { font-size: 40px; color: var(--primary-blue); margin-bottom: 15px; }
-.modern-upload-box input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.modern-upload-box i {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.modern-upload-box input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
 
 .full-btn {
     width: 100%;
@@ -2072,37 +2481,50 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 }
 
 @media (max-width: 768px) {
-    .form-grid { grid-template-columns: 1fr; }
-    .career-container { padding: 30px 20px; }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-container {
+        padding: 30px 20px;
+    }
 }
 
-/* --- سكشن شركاء النجاح (Success Partners) --- */
 .partners-section {
     padding: 80px 0;
     background: #fff;
     overflow: hidden;
 }
 
-/* شريط الشعارات */
 .logos-slider {
     margin: 50px 0;
     position: relative;
     width: 100%;
-    /* إضافة ظلال شفافة على الأطراف لإعطاء عمق (Blur Edge) */
 }
 
-.logos-slider::before, .logos-slider::after {
+.logos-slider::before,
+.logos-slider::after {
     content: "";
     position: absolute;
-    top: 0; width: 150px; height: 100%;
+    top: 0;
+    width: 150px;
+    height: 100%;
     z-index: 2;
 }
-.logos-slider::before { left: 0; background: linear-gradient(to right, white, transparent); }
-.logos-slider::after { right: 0; background: linear-gradient(to left, white, transparent); }
+
+.logos-slider::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.logos-slider::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
 
 .logos-track {
     display: flex;
-    width: calc(250px * 10); /* عرض إجمالي للشعارات */
+    width: calc(250px * 10);
 }
 
 .logo-item {
@@ -2116,23 +2538,26 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 .logo-item img {
     width: 160px;
     height: auto;
-    /* opacity: 0.5; */
     transition: 0.4s;
 }
 
 .logo-item img:hover {
-    filter: grayscale(0%); /* تتحول لألوانها الأصلية عند الوقوف عليها */
+    filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.1);
 }
 
-/* أنيميشن الحركة */
 @keyframes scrollLogos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 5)); } /* يتحرك بمقدار نصف العدد (لأننا كررناهم) */
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 5));
+    }
+
 }
 
-/* --- شريط الإشعارات السفلي --- */
 .partners-notifications {
     background: var(--soft-gray);
     border-radius: 50px;
@@ -2164,35 +2589,39 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     font-weight: 600;
 }
 
-/* للموبايل */
 @media (max-width: 768px) {
-    .logos-track { animation-duration: 15s; }
-    .logo-item { width: 150px; }
-    .logo-item img { width: 100px; }
+    .logos-track {
+        animation-duration: 15s;
+    }
+
+    .logo-item {
+        width: 150px;
+    }
+
+    .logo-item img {
+        width: 100px;
+    }
 }
 
 
-/* --- تنسيق الفيديو المطور --- */
 .vision-video {
     width: 100%;
-    height: 400px; /* نفس ارتفاع الصورة السابق */
-    object-fit: cover; /* لضمان ملء الفيديو للمساحة بدون تمطيط */
-    border-radius: 20px; /* الحواف الدائرية كما في الصورة */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
     box-shadow: var(--shadow);
     display: block;
 }
 
-/* للموبايل */
 @media (max-width: 992px) {
     .vision-video {
-        height: 250px; /* تقليل الارتفاع في الموبايل */
+        height: 250px;
     }
 }
 
-/* --- تنسيق صفحة الاستدامة (Sustainability Page) --- */
 
 .sustainability-hero {
-    background: linear-gradient(135deg, #004685 0%, #00602d 100%) !important; /* تدرج أزرق وأخضر */
+    background: linear-gradient(135deg, #004685 0%, #00602d 100%) !important;
 }
 
 .sus-row {
@@ -2232,7 +2661,7 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 
 .sus-icon-title i {
     font-size: 40px;
-    color: var(--accent); /* الذهبي */
+    color: var(--accent);
 }
 
 .sus-icon-title h2 {
@@ -2248,8 +2677,8 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin-bottom: 20px;
 }
 
-/* صناديق التمييز */
-.highlight-info, .promise-box {
+.highlight-info,
+.promise-box {
     background: #f0f7ff;
     padding: 25px;
     border-radius: 15px;
@@ -2268,7 +2697,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: #1b5e20;
 }
 
-/* القوائم المدعمة بالأيقونات */
 .check-list {
     list-style: none;
     margin-top: 25px;
@@ -2288,25 +2716,37 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: #2ecc71;
 }
 
-/* للموبايل */
 @media (max-width: 992px) {
-    .sus-row, .sus-row.reverse {
+
+    .sus-row,
+    .sus-row.reverse {
         flex-direction: column;
         gap: 40px;
         text-align: center;
     }
-    .sus-text { text-align: center; }
-    .sus-icon-title { justify-content: center; }
-    .sus-img img { height: 300px; }
-    .highlight-info, .promise-box { text-align: right; }
+
+    .sus-text {
+        text-align: center;
+    }
+
+    .sus-icon-title {
+        justify-content: center;
+    }
+
+    .sus-img img {
+        height: 300px;
+    }
+
+    .highlight-info,
+    .promise-box {
+        text-align: right;
+    }
 }
 
-/* --- تنسيق صفحة الكاسر القابضة (About Page) --- */
 
 .about-hero {
-    /* صورة خلفية إماراتية (مثل أبراج الاتحاد أو نخلة جميرا) */
-    background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)), 
-                url('https://static.myconnect.ae/-/media/yasconnect/project/ppad/plan-your-visit/famous-landmarks/article-qaw1.jpg') center/cover no-repeat !important;
+    background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)),
+        url('https://static.myconnect.ae/-/media/yasconnect/project/ppad/plan-your-visit/famous-landmarks/article-qaw1.jpg') center/cover no-repeat !important;
 }
 
 .about-main-row {
@@ -2328,8 +2768,10 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 .about-main-text h2::after {
     content: '';
     position: absolute;
-    right: 0; bottom: 0;
-    width: 50px; height: 4px;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
     background: var(--accent);
 }
 
@@ -2346,7 +2788,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     box-shadow: var(--shadow);
 }
 
-/* صندوق التمييز للقطاعات */
 .highlight-box-navy {
     background: var(--primary);
     color: white;
@@ -2357,8 +2798,17 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     border-right: 10px solid var(--accent);
 }
 
-.highlight-box-navy h3 { font-size: 28px; margin-bottom: 20px; }
-.highlight-box-navy p { font-size: 18px; opacity: 0.9; max-width: 900px; margin: 0 auto; }
+.highlight-box-navy h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.highlight-box-navy p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
 .solar-tag {
     display: inline-block;
@@ -2370,7 +2820,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     font-weight: 700;
 }
 
-/* كروت الرؤية والرسالة */
 .vision-mission-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2385,8 +2834,13 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     text-align: center;
 }
 
-.vm-card.gold-border { border-top: 5px solid var(--accent); }
-.vm-card.blue-border { border-top: 5px solid var(--primary); }
+.vm-card.gold-border {
+    border-top: 5px solid var(--accent);
+}
+
+.vm-card.blue-border {
+    border-top: 5px solid var(--primary);
+}
 
 .vm-icon {
     font-size: 45px;
@@ -2394,8 +2848,17 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin-bottom: 20px;
 }
 
-.vm-card h3 { font-size: 26px; margin-bottom: 20px; color: var(--primary); }
-.vm-card p { font-size: 16px; color: #666; line-height: 1.8; }
+.vm-card h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.vm-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
 
 .mission-points {
     text-align: right;
@@ -2421,22 +2884,32 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: var(--accent);
 }
 
-/* للتجاوب مع الموبايل */
 @media (max-width: 992px) {
-    .about-main-row, .vision-mission-grid {
+
+    .about-main-row,
+    .vision-mission-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about-main-text { text-align: center; }
-    .about-main-text h2::after { right: 50%; transform: translateX(50%); }
-    .mission-points { display: inline-block; }
+
+    .about-main-text {
+        text-align: center;
+    }
+
+    .about-main-text h2::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .mission-points {
+        display: inline-block;
+    }
 }
 
-/* --- سكشن قيمنا وتاريخنا (History & Values) --- */
 
 .history-hero {
-    background: linear-gradient(rgba(0, 70, 133, 0.7), rgba(0, 70, 133, 0.7)), 
-                url('https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed !important;
+    background: linear-gradient(rgba(0, 70, 133, 0.7), rgba(0, 70, 133, 0.7)),
+        url('https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed !important;
     padding: 120px 0 !important;
 }
 
@@ -2455,8 +2928,9 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     box-shadow: var(--shadow);
 }
 
-/* شبكة القيم */
-.values-section { background-color: var(--soft-gray); }
+.values-section {
+    background-color: var(--soft-gray);
+}
 
 .values-grid {
     display: grid;
@@ -2480,8 +2954,17 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     margin-bottom: 20px;
 }
 
-.value-card h4 { font-size: 20px; margin-bottom: 15px; color: var(--primary); }
-.value-card p { font-size: 14px; color: #777; line-height: 1.6; }
+.value-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.value-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
 
 .value-card:hover {
     transform: translateY(-10px);
@@ -2489,7 +2972,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     box-shadow: var(--shadow);
 }
 
-/* فروع الفلسفة المؤسسية */
 .phil-row {
     display: flex;
     align-items: center;
@@ -2498,73 +2980,100 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     background: #fff;
     padding: 40px;
     border-radius: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
 }
 
-.phil-row.reverse { flex-direction: row-reverse; }
+.phil-row.reverse {
+    flex-direction: row-reverse;
+}
 
 .phil-icon-box {
-    width: 90px; height: 90px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 35px; flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    flex-shrink: 0;
 }
 
-.blue-box { background: #eef4ff; color: var(--primary); }
-.gold-box { background: #fff9e6; color: var(--accent); }
+.blue-box {
+    background: #eef4ff;
+    color: var(--primary);
+}
 
-.phil-text h3 { font-size: 24px; color: var(--primary); margin-bottom: 10px; }
-.phil-text p { font-size: 16px; color: #666; line-height: 1.8; }
+.gold-box {
+    background: #fff9e6;
+    color: var(--accent);
+}
 
-/* للموبايل */
+.phil-text h3 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.phil-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
 @media (max-width: 992px) {
-    .history-layout, .values-grid, .phil-row, .phil-row.reverse {
+
+    .history-layout,
+    .values-grid,
+    .phil-row,
+    .phil-row.reverse {
         grid-template-columns: 1fr;
         flex-direction: column;
         text-align: center;
     }
-    .history-image img { height: 300px; }
-    .phil-icon-box { margin: 0 auto 20px; }
+
+    .history-image img {
+        height: 300px;
+    }
+
+    .phil-icon-box {
+        margin: 0 auto 20px;
+    }
 }
 
-/* تنسيق أيقونة الثلاث شرطات في الموبايل */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block !important; /* إجبار الظهور */
-        font-size: 28px !important; /* تكبير الحجم ليكون واضحاً */
-        color: var(--primary-blue) !important; /* التأكد من اللون الكحلي */
+        display: block !important;
+        font-size: 28px !important;
+        color: var(--primary-blue) !important;
         cursor: pointer;
         z-index: 1001;
-        order: 2; /* يضمن ظهوره في الجهة المقابلة للوجو */
+        order: 2;
     }
-    
+
     .nav-wrap {
         display: flex;
-        justify-content: space-between; /* توزيع اللوجو والزرار على الأطراف */
+        justify-content: space-between;
         align-items: center;
     }
 }
 
-/* --- سكشن الهيرو الخاص بالتواصل --- */
 .contact-hero {
     background: linear-gradient(135deg, #004685 0%, #052d52 100%) !important;
     padding: 100px 0 !important;
 }
 
-/* --- تصميم كارت التواصل الكبير --- */
 .contact-main-card {
     display: flex;
     background: #fff;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
-    margin-top: -60px; /* جعل الكارت يركب فوق الهيرو قليلاً */
+    margin-top: -60px;
     position: relative;
     z-index: 10;
     border: 1px solid #eee;
 }
 
-/* الجهة الزرقاء */
 .contact-blue-side {
     flex: 1;
     background-color: #004685;
@@ -2573,8 +3082,18 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     text-align: right;
 }
 
-.contact-blue-side h2 { font-size: 36px; font-weight: 800; margin-bottom: 20px; }
-.contact-blue-side p { font-size: 16px; opacity: 0.8; margin-bottom: 50px; line-height: 1.8; }
+.contact-blue-side h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact-blue-side p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
 
 .contact-info-list .info-item {
     display: flex;
@@ -2585,29 +3104,64 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
 
 .info-item i {
     font-size: 24px;
-    color: var(--accent); /* الذهبي */
+    color: var(--accent);
     margin-top: 5px;
 }
 
-.item-text span { display: block; font-size: 12px; opacity: 0.6; margin-bottom: 5px; }
-.item-text a, .item-text p { color: white; text-decoration: none; font-size: 16px; font-weight: 600; margin: 0; }
+.item-text span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
 
-.social-links-contact { display: flex; gap: 15px; margin-top: 50px; }
-.social-links-contact a { color: white; font-size: 20px; opacity: 0.7; transition: 0.3s; }
-.social-links-contact a:hover { opacity: 1; color: var(--accent); }
+.item-text a,
+.item-text p {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
 
-/* الجهة البيضاء (الفورم) */
+.social-links-contact {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.social-links-contact a {
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.social-links-contact a:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
 .contact-white-side {
     flex: 1.4;
     padding: 60px;
     background: #fff;
 }
 
-.kaaser-form .input-group { margin-bottom: 25px; }
-.kaaser-form label { display: block; font-weight: 700; margin-bottom: 10px; color: #333; font-size: 15px; }
+.kaaser-form .input-group {
+    margin-bottom: 25px;
+}
 
-.kaaser-form input, 
-.kaaser-form select, 
+.kaaser-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 15px;
+}
+
+.kaaser-form input,
+.kaaser-form select,
 .kaaser-form textarea {
     width: 100%;
     padding: 15px;
@@ -2620,16 +3174,18 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     transition: 0.3s;
 }
 
-.kaaser-form input:focus, 
+.kaaser-form input:focus,
 .kaaser-form textarea:focus {
     border-color: var(--primary);
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 70, 133, 0.05);
 }
 
-.kaaser-form textarea { height: 130px; resize: none; }
+.kaaser-form textarea {
+    height: 130px;
+    resize: none;
+}
 
-/* زر الإرسال الذهبي */
 .btn-submit-gold {
     width: 100%;
     background-color: var(--accent);
@@ -2650,24 +3206,40 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     transform: translateY(-3px);
 }
 
-/* التجاوب مع الموبايل */
 @media (max-width: 992px) {
-    .contact-main-card { flex-direction: column; margin-top: 20px; }
-    .contact-blue-side, .contact-white-side { padding: 40px 25px; width: 100%; }
-    .contact-blue-side { text-align: center; }
-    .contact-info-list .info-item { justify-content: center; text-align: right; }
-    .social-links-contact { justify-content: center; }
+    .contact-main-card {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact-blue-side,
+    .contact-white-side {
+        padding: 40px 25px;
+        width: 100%;
+    }
+
+    .contact-blue-side {
+        text-align: center;
+    }
+
+    .contact-info-list .info-item {
+        justify-content: center;
+        text-align: right;
+    }
+
+    .social-links-contact {
+        justify-content: center;
+    }
 }
 
 .top-contact-link {
     position: relative !important;
-    z-index: 9999 !important; /* رفعه فوق أي طبقة تانية */
+    z-index: 9999 !important;
     cursor: pointer !important;
     display: inline-block !important;
-    pointer-events: auto !important; /* التأكد إن اللمس شغال */
+    pointer-events: auto !important;
 }
 
-/* --- تنسيق صفحة سياسة الخصوصية --- */
 
 .privacy-hero {
     background: linear-gradient(135deg, #071e3d 0%, #004685 100%) !important;
@@ -2768,19 +3340,20 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     color: var(--primary);
 }
 
-/* للموبايل */
 @media (max-width: 768px) {
     .privacy-container {
         padding: 30px 20px;
     }
-    .block-header h2 { font-size: 20px; }
+
+    .block-header h2 {
+        font-size: 20px;
+    }
 }
 
-/* --- تنسيق صفحة شركاء النجاح --- */
 
 .partners-hero {
-    background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)), 
-                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat !important;
+    background: linear-gradient(rgba(0, 70, 133, 0.8), rgba(0, 70, 133, 0.8)),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat !important;
 }
 
 .intro-p {
@@ -2802,7 +3375,6 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     border-right: 4px solid var(--accent);
 }
 
-/* شبكة الشعارات */
 .logos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -2825,23 +3397,22 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     max-width: 100%;
     max-height: 80px;
     object-fit: contain;
-    filter: grayscale(100%); /* شعارات رمادية في البداية */
+    filter: grayscale(100%);
     opacity: 0.6;
     transition: 0.4s;
 }
 
 .logo-item:hover {
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transform: translateY(-5px);
 }
 
 .logo-item:hover img {
-    filter: grayscale(0%); /* تتحول للملون عند الوقوف عليها */
+    filter: grayscale(0%);
     opacity: 1;
 }
 
-/* كارت الانضمام */
 .join-partners {
     margin-top: 100px;
 }
@@ -2855,21 +3426,35 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     box-shadow: var(--shadow);
 }
 
-.join-card h3 { font-size: 28px; margin-bottom: 15px; }
-.join-card p { font-size: 18px; opacity: 0.8; margin-bottom: 35px; }
-
-/* للموبايل */
-@media (max-width: 768px) {
-    .logos-grid { grid-template-columns: repeat(2, 1fr); }
-    .join-card { padding: 40px 20px; }
-    .logo-item { height: 100px; }
+.join-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-/* --- زر اللغة العائم --- */
+.join-card p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+    .logos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-card {
+        padding: 40px 20px;
+    }
+
+    .logo-item {
+        height: 100px;
+    }
+}
+
 .lang-float-btn {
     position: fixed;
     bottom: 30px;
-    left: 30px; /* عكس مكان الواتساب */
+    left: 30px;
     width: 60px;
     height: 60px;
     background: rgba(255, 255, 255, 0.9);
@@ -2883,12 +3468,18 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     text-decoration: none;
     color: var(--primary-blue);
     z-index: 9999;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
-.lang-float-btn i { font-size: 20px; }
-.lang-float-btn span { font-size: 10px; font-weight: 900; }
+.lang-float-btn i {
+    font-size: 20px;
+}
+
+.lang-float-btn span {
+    font-size: 10px;
+    font-weight: 900;
+}
 
 .lang-float-btn:hover {
     background: var(--primary-blue);
@@ -2896,7 +3487,11 @@ body { font-family: 'Cairo', sans-serif; direction: rtl; }
     transform: scale(1.1) rotate(10deg);
 }
 
-/* في الموبايل نصغرها شوية */
 @media (max-width: 768px) {
-    .lang-float-btn { width: 50px; height: 50px; bottom: 20px; left: 20px; }
+    .lang-float-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        left: 20px;
+    }
 }
